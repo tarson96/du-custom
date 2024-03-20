@@ -1,0 +1,1992 @@
+{
+  "#AK63": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAMLAAQAAAAFI0FLNjMKAAcYiP2/ahtQAQ8ACQoAAAABC6apEctU4AAKAAoLpqkRy1TgAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767941852303675393",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "839544274442051584",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 3,
+              "topicIds": [
+                "839544274442051584"
+              ],
+              "trendName": "#AK63"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#AK63",
+        "rank": "3",
+        "trendMetadata": {
+          "domainContext": "Entertainment · Trending",
+          "metaDescription": "49.8K posts",
+          "url": {
+            "url": "twitter://search/?query=%23AK63&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgFI0FLNjMYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23AK63&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgFI0FLNjMYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAFI0FLNjMKAAO4UMG/048w4AYABAADDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "#Aashiyana": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAILAAQAAAAKI0Fhc2hpeWFuYQoABxiJgeq5GhAADwAJCgAAAAEPKV4X5lXgAQoACg8pXhfmVeABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768087173847453696",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 2,
+              "topicIds": [
+                "1092507841355702273"
+              ],
+              "trendName": "#Aashiyana"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#Aashiyana",
+        "rank": "2",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "36.6K posts",
+          "url": {
+            "url": "twitter://search/?query=%23Aashiyana&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgKI0Fhc2hpeWFuYRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23Aashiyana&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgKI0Fhc2hpeWFuYRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAKI0Fhc2hpeWFuYQoAA7hQwb/TjzDgBgAEAAIPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "#AmitShahOnCAA": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAELAAQAAAAOI0FtaXRTaGFoT25DQUEPAAkKAAAAAgvERVqEFcABDtmFHs5VsAAKAAoLxEVahBXAAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 1,
+              "topicIds": [
+                "847878884917886977",
+                "1070032753834438656"
+              ],
+              "trendName": "#AmitShahOnCAA"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#AmitShahOnCAA",
+        "rank": "1",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "3,316 posts",
+          "url": {
+            "url": "twitter://search/?query=%23AmitShahOnCAA&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgOI0FtaXRTaGFoT25DQUEYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23AmitShahOnCAA&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgOI0FtaXRTaGFoT25DQUEYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAOI0FtaXRTaGFoT25DQUEKAAO4UMG/048w4AYABAABDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "#DhruvRathee": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAQLAAQAAAAMI0RocnV2UmF0aGVlCgAHGImzPMyXwAIPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768141402431537154",
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 4,
+              "trendName": "#DhruvRathee"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#DhruvRathee",
+        "rank": "4",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "16.4K posts",
+          "url": {
+            "url": "twitter://search/?query=%23DhruvRathee&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgMI0RocnV2UmF0aGVlGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23DhruvRathee&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgMI0RocnV2UmF0aGVlGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAMI0RocnV2UmF0aGVlCgADuFDBv9OPMOAGAAQABA8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "#HBDLokeshKanagaraj": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAULAAQAAAATI0hCRExva2VzaEthbmFnYXJhag8ABQsAAAACAAAAHSNoYXBweWJpcnRoZGF5bG9rZXNoa2FuYWdhcmFqAAAAECNsb2tlc2hrYW5hZ2FyYWoKAAcYiWf/KRtAAQ8ACQoAAAAGEuDcBCkUUAEQmqK9UJTQABLg2uYG1GACC6apEctU4AAS4OSiDhVwAhVTvPT1FFAACgAKEuDcBCkUUAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768058674323603457",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1360328997893066753",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 5,
+              "relatedTerms": [
+                "#happybirthdaylokeshkanagaraj",
+                "#lokeshkanagaraj"
+              ],
+              "topicIds": [
+                "1360328997893066753",
+                "1196447585004736512",
+                "1360327768957804546",
+                "839544274442051584",
+                "1360338472138010626",
+                "1536779658133262336"
+              ],
+              "trendName": "#HBDLokeshKanagaraj"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#HBDLokeshKanagaraj",
+        "rank": "5",
+        "trendMetadata": {
+          "domainContext": "Tamil cinema · Trending",
+          "metaDescription": "9,899 posts",
+          "url": {
+            "url": "twitter://search/?query=%23HBDLokeshKanagaraj&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgTI0hCRExva2VzaEthbmFnYXJhahgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23HBDLokeshKanagaraj&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgTI0hCRExva2VzaEthbmFnYXJhahgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAATI0hCRExva2VzaEthbmFnYXJhagoAA7hQwb/TjzDgBgAEAAUPAAULAAAAAgAAAB0jaGFwcHliaXJ0aGRheWxva2VzaGthbmFnYXJhagAAABAjbG9rZXNoa2FuYWdhcmFqCAAGAAAAAwA="
+    }
+  },
+  "#HondaElevate": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAYAAwAACwAEAAAADSNIb25kYUVsZXZhdGUCAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "position": 0,
+              "promotedDisclosureType": "NoDisclosure",
+              "promotedImpressionId": "1dbbfe12847d37e6",
+              "promotedTrendId": "100799",
+              "trendName": "#HondaElevate"
+            }
+          }
+        }
+      },
+      "element": "promoted_trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "description": "Avail Limited-period Celebration Offers up to ₹ 50 000*",
+        "metaDescription": "Promoted by Honda Car India",
+        "name": "#HondaElevate",
+        "promotedMetadata": {
+          "advertiserId": "0",
+          "disclosureType": "NoDisclosure",
+          "impressionString": "1dbbfe12847d37e6",
+          "promotedTrendId": "100799",
+          "promotedTrendName": "#HondaElevate",
+          "promotedTrendQueryTerm": "#HondaElevate"
+        },
+        "trendMetadata": {
+          "metaDescription": "Promoted by Honda Car India"
+        },
+        "url": {
+          "url": "twitter://search/?query=%23HondaElevate&src=promoted_trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgNI0hvbmRhRWxldmF0ZQAA"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Ancient Remedies": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMABwsABAAAABBBbmNpZW50IFJlbWVkaWVzCgAHGImP+vdaMAAPAAkKAAAAAQ8pXhfmVeABCgAKDyleF+ZV4AEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768102636774109184",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 7,
+              "topicIds": [
+                "1092507841355702273"
+              ],
+              "trendName": "Ancient Remedies"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Ancient Remedies",
+        "rank": "7",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "35.2K posts",
+          "url": {
+            "url": "twitter://search/?query=%22Ancient+Remedies%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgQQW5jaWVudCBSZW1lZGllcxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Ancient+Remedies%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgQQW5jaWVudCBSZW1lZGllcxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAQQW5jaWVudCBSZW1lZGllcwoAA7hQwb/TjzDgBgAEAAcPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "Arvind Kejriwal": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAHAsABAAAAA9BcnZpbmQgS2Vqcml3YWwKAAcYiaiU7JaQAA8ACQoAAAACC8RFWoQVwAEO2YUezlWwAAoACgvERVqEFcABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768129686297546752",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 28,
+              "topicIds": [
+                "847878884917886977",
+                "1070032753834438656"
+              ],
+              "trendName": "Arvind Kejriwal"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Arvind Kejriwal",
+        "rank": "28",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "18.2K posts",
+          "url": {
+            "url": "twitter://search/?query=%22Arvind+Kejriwal%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgPQXJ2aW5kIEtlanJpd2FsGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Arvind+Kejriwal%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgPQXJ2aW5kIEtlanJpd2FsGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAPQXJ2aW5kIEtlanJpd2FsCgADuFDBv9OPMOAGAAQAHA8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Bayern": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGwsABAAAAAZCYXllcm4KAAcYiTes4xtwAA8ACQoAAAADCi7TrsQVEAALxFkBqNVgAQou066plFAACgAKCi7TrsQVEAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768005544403759104",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "733756536875454464",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 27,
+              "topicIds": [
+                "733756536875454464",
+                "847900493514891265",
+                "733756536430809088"
+              ],
+              "trendName": "Bayern"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Bayern",
+        "rank": "27",
+        "trendMetadata": {
+          "domainContext": "UEFA Champions League · Trending",
+          "metaDescription": "84.6K posts",
+          "url": {
+            "url": "twitter://search/?query=Bayern&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgGQmF5ZXJuGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Bayern&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgGQmF5ZXJuGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAGQmF5ZXJuCgADuFDBv9OPMOAGAAQAGw8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Dera Sacha Sauda": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADgsABAAAABBEZXJhIFNhY2hhIFNhdWRhCgAHGImB6rkaEAAPAAkKAAAAAg8pXhfmVeABE2Ml0XGVUAEKAAoPKV4X5lXgAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768087173847453696",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 14,
+              "topicIds": [
+                "1092507841355702273",
+                "1397001890898989057"
+              ],
+              "trendName": "Dera Sacha Sauda"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Dera Sacha Sauda",
+        "rank": "14",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "43.8K posts",
+          "url": {
+            "url": "twitter://search/?query=%22Dera+Sacha+Sauda%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgQRGVyYSBTYWNoYSBTYXVkYRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Dera+Sacha+Sauda%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgQRGVyYSBTYWNoYSBTYXVkYRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAQRGVyYSBTYWNoYSBTYXVkYQoAA7hQwb/TjzDgBgAEAA4PAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "Dortmund": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGAsABAAAAAhEb3J0bXVuZAoABxiJN6zjG3AADwAJCgAAAAMKLtOuxBUQAAvEWQGo1WABCi7TrqmUUAAKAAoKLtOuxBUQAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768005544403759104",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "733756536875454464",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 24,
+              "topicIds": [
+                "733756536875454464",
+                "847900493514891265",
+                "733756536430809088"
+              ],
+              "trendName": "Dortmund"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Dortmund",
+        "rank": "24",
+        "trendMetadata": {
+          "domainContext": "UEFA Champions League · Trending",
+          "metaDescription": "95.3K posts",
+          "url": {
+            "url": "twitter://search/?query=Dortmund&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgIRG9ydG11bmQYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Dortmund&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgIRG9ydG11bmQYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAIRG9ydG11bmQKAAO4UMG/048w4AYABAAYDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "Homely Shelter": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEAsABAAAAA5Ib21lbHkgU2hlbHRlcgoABxiJgeq5GhAADwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768087173847453696",
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 16,
+              "trendName": "Homely Shelter"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Homely Shelter",
+        "rank": "16",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "6,244 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Homely+Shelter%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgOSG9tZWx5IFNoZWx0ZXIYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Homely+Shelter%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgOSG9tZWx5IFNoZWx0ZXIYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAOSG9tZWx5IFNoZWx0ZXIKAAO4UMG/048w4AYABAAQDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "Iyer": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADQsABAAAAARJeWVyDwAJCgAAAAIMda1X0BVgAAvEWQGo1WABCgAKDHWtV9AVYAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "897814293395103744",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 13,
+              "topicIds": [
+                "897814293395103744",
+                "847900493514891265"
+              ],
+              "trendName": "Iyer"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Iyer",
+        "rank": "13",
+        "trendMetadata": {
+          "domainContext": "Cricket · Trending",
+          "metaDescription": "4,794 posts",
+          "url": {
+            "url": "twitter://search/?query=Iyer&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgESXllchgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Iyer&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgESXllchgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAESXllcgoAA7hQwb/TjzDgBgAEAA0PAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "Kerala": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEgsABAAAAAZLZXJhbGEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 18,
+              "trendName": "Kerala"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Kerala",
+        "rank": "18",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "46.2K posts",
+          "url": {
+            "url": "twitter://search/?query=Kerala&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgGS2VyYWxhGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Kerala&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgGS2VyYWxhGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAGS2VyYWxhCgADuFDBv9OPMOAGAAQAEg8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Loki": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFwsABAAAAARMb2tpDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 23,
+              "trendName": "Loki"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Loki",
+        "rank": "23",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "17.1K posts",
+          "url": {
+            "url": "twitter://search/?query=Loki&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgETG9raRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Loki&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgETG9raRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAETG9raQoAA7hQwb/TjzDgBgAEABcPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "SEBI": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGgsABAAAAARTRUJJCgAHGImZhm6XoAEPAAkKAAAAAQraIcCK1BABCgAKCtohwIrUEAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768113131379728385",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "781974596148793345",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 26,
+              "topicIds": [
+                "781974596148793345"
+              ],
+              "trendName": "SEBI"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "SEBI",
+        "rank": "26",
+        "trendMetadata": {
+          "domainContext": "Business & finance · Trending",
+          "metaDescription": "18.4K posts",
+          "url": {
+            "url": "twitter://search/?query=SEBI&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgEU0VCSRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=SEBI&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgEU0VCSRgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAEU0VCSQoAA7hQwb/TjzDgBgAEABoPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "SSRCs Throws Spotlight OnNexus": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACQsABAAAAB5TU1JDcyBUaHJvd3MgU3BvdGxpZ2h0IE9uTmV4dXMPAAkKAAAAAQvERVqEFcABCgAKC8RFWoQVwAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 9,
+              "topicIds": [
+                "847878884917886977"
+              ],
+              "trendName": "SSRCs Throws Spotlight OnNexus"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "SSRCs Throws Spotlight OnNexus",
+        "rank": "9",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "9,082 posts",
+          "url": {
+            "url": "twitter://search/?query=%22SSRCs+Throws+Spotlight+OnNexus%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgeU1NSQ3MgVGhyb3dzIFNwb3RsaWdodCBPbk5leHVzGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22SSRCs+Throws+Spotlight+OnNexus%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgeU1NSQ3MgVGhyb3dzIFNwb3RsaWdodCBPbk5leHVzGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAeU1NSQ3MgVGhyb3dzIFNwb3RsaWdodCBPbk5leHVzCgADuFDBv9OPMOAGAAQACQ8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Saint MSG Insan": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADAsABAAAAA9TYWludCBNU0cgSW5zYW4KAAcYiYHquRoQAA8ACQoAAAABDyleF+ZV4AEKAAoPKV4X5lXgAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768087173847453696",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 12,
+              "topicIds": [
+                "1092507841355702273"
+              ],
+              "trendName": "Saint MSG Insan"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Saint MSG Insan",
+        "rank": "12",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "59.4K posts",
+          "url": {
+            "url": "twitter://search/?query=%22Saint+MSG+Insan%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgPU2FpbnQgTVNHIEluc2FuGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Saint+MSG+Insan%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgPU2FpbnQgTVNHIEluc2FuGCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAPU2FpbnQgTVNHIEluc2FuCgADuFDBv9OPMOAGAAQADA8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Sant Shri Asharamji Bapu": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACwsABAAAABhTYW50IFNocmkgQXNoYXJhbWppIEJhcHUKAAcYiY/691owAA8ACQoAAAABDyleF+ZV4AEKAAoPKV4X5lXgAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768102636774109184",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 11,
+              "topicIds": [
+                "1092507841355702273"
+              ],
+              "trendName": "Sant Shri Asharamji Bapu"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Sant Shri Asharamji Bapu",
+        "rank": "11",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "52.8K posts",
+          "url": {
+            "url": "twitter://search/?query=%22Sant+Shri+Asharamji+Bapu%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgYU2FudCBTaHJpIEFzaGFyYW1qaSBCYXB1GCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Sant+Shri+Asharamji+Bapu%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgYU2FudCBTaHJpIEFzaGFyYW1qaSBCYXB1GCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAYU2FudCBTaHJpIEFzaGFyYW1qaSBCYXB1CgADuFDBv9OPMOAGAAQACw8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Shreyas": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFQsABAAAAAdTaHJleWFzDwAJCgAAAAIMda1X0BVgAAvEWQGo1WABCgAKDHWtV9AVYAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "897814293395103744",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 21,
+              "topicIds": [
+                "897814293395103744",
+                "847900493514891265"
+              ],
+              "trendName": "Shreyas"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Shreyas",
+        "rank": "21",
+        "trendMetadata": {
+          "domainContext": "Cricket · Trending",
+          "metaDescription": "2,932 posts",
+          "url": {
+            "url": "twitter://search/?query=Shreyas&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgHU2hyZXlhcxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Shreyas&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgHU2hyZXlhcxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAHU2hyZXlhcwoAA7hQwb/TjzDgBgAEABUPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "Traditional Medicine": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMABgsABAAAABRUcmFkaXRpb25hbCBNZWRpY2luZQoABxiJj/r3WjAADwAJCgAAAAEPKV4X5lXgAQoACg8pXhfmVeABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768102636774109184",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 6,
+              "topicIds": [
+                "1092507841355702273"
+              ],
+              "trendName": "Traditional Medicine"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Traditional Medicine",
+        "rank": "6",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "34.6K posts",
+          "url": {
+            "url": "twitter://search/?query=%22Traditional+Medicine%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgUVHJhZGl0aW9uYWwgTWVkaWNpbmUYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Traditional+Medicine%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgUVHJhZGl0aW9uYWwgTWVkaWNpbmUYJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAUVHJhZGl0aW9uYWwgTWVkaWNpbmUKAAO4UMG/048w4AYABAAGDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "आयुर्वेदिक उपचार": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGQsABAAAAC7gpIbgpK/gpYHgpLDgpY3gpLXgpYfgpKbgpL/gpJUg4KSJ4KSq4KSa4KS+4KSwDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 25,
+              "trendName": "आयुर्वेदिक उपचार"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "आयुर्वेदिक उपचार",
+        "rank": "25",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "5,679 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%86%E0%A4%AF%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%BF%E0%A4%95+%E0%A4%89%E0%A4%AA%E0%A4%9A%E0%A4%BE%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgu4KSG4KSv4KWB4KSw4KWN4KS14KWH4KSm4KS/4KSVIOCkieCkquCkmuCkvuCksBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%86%E0%A4%AF%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%BF%E0%A4%95+%E0%A4%89%E0%A4%AA%E0%A4%9A%E0%A4%BE%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgu4KSG4KSv4KWB4KSw4KWN4KS14KWH4KSm4KS/4KSVIOCkieCkquCkmuCkvuCksBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAu4KSG4KSv4KWB4KSw4KWN4KS14KWH4KSm4KS/4KSVIOCkieCkquCkmuCkvuCksAoAA7hQwb/TjzDgBgAEABkPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "आयुर्वेदिक चिकित्सा": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFgsABAAAADfgpIbgpK/gpYHgpLDgpY3gpLXgpYfgpKbgpL/gpJUg4KSa4KS/4KSV4KS/4KSk4KWN4KS44KS+CgAHGImP+vdaMAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768102636774109184",
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 22,
+              "trendName": "आयुर्वेदिक चिकित्सा"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "आयुर्वेदिक चिकित्सा",
+        "rank": "22",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "3,820 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%86%E0%A4%AF%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%BF%E0%A4%95+%E0%A4%9A%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B8%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBg34KSG4KSv4KWB4KSw4KWN4KS14KWH4KSm4KS/4KSVIOCkmuCkv+CkleCkv+CkpOCljeCkuOCkvhgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%86%E0%A4%AF%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%BF%E0%A4%95+%E0%A4%9A%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B8%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBg34KSG4KSv4KWB4KSw4KWN4KS14KWH4KSm4KS/4KSVIOCkmuCkv+CkleCkv+CkpOCljeCkuOCkvhgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAA34KSG4KSv4KWB4KSw4KWN4KS14KWH4KSm4KS/4KSVIOCkmuCkv+CkleCkv+CkpOCljeCkuOCkvgoAA7hQwb/TjzDgBgAEABYPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "गरीब परिवार": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAHQsABAAAAB/gpJfgpLDgpYDgpKwg4KSq4KSw4KS/4KS14KS+4KSwDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 29,
+              "trendName": "गरीब परिवार"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "गरीब परिवार",
+        "rank": "29",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "30K posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AC+%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgf4KSX4KSw4KWA4KSsIOCkquCksOCkv+CkteCkvuCksBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AC+%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgf4KSX4KSw4KWA4KSsIOCkquCksOCkv+CkteCkvuCksBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAf4KSX4KSw4KWA4KSsIOCkquCksOCkv+CkteCkvuCksAoAA7hQwb/TjzDgBgAEAB0PAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "गृह मंत्री अमित शाह": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFAsABAAAADPgpJfgpYPgpLkg4KSu4KSC4KSk4KWN4KSw4KWAIOCkheCkruCkv+CkpCDgpLbgpL7gpLkPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 20,
+              "trendName": "गृह मंत्री अमित शाह"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "गृह मंत्री अमित शाह",
+        "rank": "20",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "3,258 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%97%E0%A5%83%E0%A4%B9+%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A5%80+%E0%A4%85%E0%A4%AE%E0%A4%BF%E0%A4%A4+%E0%A4%B6%E0%A4%BE%E0%A4%B9%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgz4KSX4KWD4KS5IOCkruCkguCkpOCljeCksOClgCDgpIXgpK7gpL/gpKQg4KS24KS+4KS5GCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%97%E0%A5%83%E0%A4%B9+%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A5%80+%E0%A4%85%E0%A4%AE%E0%A4%BF%E0%A4%A4+%E0%A4%B6%E0%A4%BE%E0%A4%B9%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgz4KSX4KWD4KS5IOCkruCkguCkpOCljeCksOClgCDgpIXgpK7gpL/gpKQg4KS24KS+4KS5GCRjNDZlM2RlMi0yNjI5LTQ4NDAtOGY5Yi1jZmE3MGY1MjA3YTQAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAz4KSX4KWD4KS5IOCkruCkguCkpOCljeCksOClgCDgpIXgpK7gpL/gpKQg4KS24KS+4KS5CgADuFDBv9OPMOAGAAQAFA8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "डेरा सच्चा सौदा": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEQsABAAAACngpKHgpYfgpLDgpL4g4KS44KSa4KWN4KSa4KS+IOCkuOCljOCkpuCkvgoABxiJgeq5GhAADwAJCgAAAAEPKV4X5lXgAQoACg8pXhfmVeABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768087173847453696",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1092507841355702273",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 17,
+              "topicIds": [
+                "1092507841355702273"
+              ],
+              "trendName": "डेरा सच्चा सौदा"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "डेरा सच्चा सौदा",
+        "rank": "17",
+        "trendMetadata": {
+          "domainContext": "Only on X · Trending",
+          "metaDescription": "4,212 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%A1%E0%A5%87%E0%A4%B0%E0%A4%BE+%E0%A4%B8%E0%A4%9A%E0%A5%8D%E0%A4%9A%E0%A4%BE+%E0%A4%B8%E0%A5%8C%E0%A4%A6%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgp4KSh4KWH4KSw4KS+IOCkuOCkmuCljeCkmuCkviDgpLjgpYzgpKbgpL4YJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%A1%E0%A5%87%E0%A4%B0%E0%A4%BE+%E0%A4%B8%E0%A4%9A%E0%A5%8D%E0%A4%9A%E0%A4%BE+%E0%A4%B8%E0%A5%8C%E0%A4%A6%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgp4KSh4KWH4KSw4KS+IOCkuOCkmuCljeCkmuCkviDgpLjgpYzgpKbgpL4YJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAp4KSh4KWH4KSw4KS+IOCkuOCkmuCljeCkmuCkviDgpLjgpYzgpKbgpL4KAAO4UMG/048w4AYABAARDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "ध्रुव राठी": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADwsABAAAABzgpKfgpY3gpLDgpYHgpLUg4KSw4KS+4KSg4KWACgAHGImzPMyXwAIPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768141402431537154",
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 15,
+              "trendName": "ध्रुव राठी"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "ध्रुव राठी",
+        "rank": "15",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "14.6K posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%A7%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%B5+%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgc4KSn4KWN4KSw4KWB4KS1IOCksOCkvuCkoOClgBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%A7%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%B5+%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgc4KSn4KWN4KSw4KWB4KS1IOCksOCkvuCkoOClgBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAc4KSn4KWN4KSw4KWB4KS1IOCksOCkvuCkoOClgAoAA7hQwb/TjzDgBgAEAA8PAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "नमो नारायण": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEwsABAAAABzgpKjgpK7gpYsg4KSo4KS+4KSw4KS+4KSv4KSjDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 19,
+              "trendName": "नमो नारायण"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "नमो नारायण",
+        "rank": "19",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "6,640 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%A8%E0%A4%AE%E0%A5%8B+%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%A3%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgc4KSo4KSu4KWLIOCkqOCkvuCksOCkvuCkr+CkoxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%A8%E0%A4%AE%E0%A5%8B+%E0%A4%A8%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%A3%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgc4KSo4KSu4KWLIOCkqOCkvuCksOCkvuCkr+CkoxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAc4KSo4KSu4KWLIOCkqOCkvuCksOCkvuCkr+CkowoAA7hQwb/TjzDgBgAEABMPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "रामलीला मैदान": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACgsABAAAACXgpLDgpL7gpK7gpLLgpYDgpLLgpL4g4KSu4KWI4KSm4KS+4KSoCgAHGIms2mkaAAAPAAkKAAAAAhPt4seJlVANEerkUisVoAAKAAoT7eLHiZVQDQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1768134382785789952",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1436053202835689485",
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 10,
+              "topicIds": [
+                "1436053202835689485",
+                "1291095284756357120"
+              ],
+              "trendName": "रामलीला मैदान"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "रामलीला मैदान",
+        "rank": "10",
+        "trendMetadata": {
+          "domainContext": "Events · Trending",
+          "metaDescription": "2,053 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%B2%E0%A5%80%E0%A4%B2%E0%A4%BE+%E0%A4%AE%E0%A5%88%E0%A4%A6%E0%A4%BE%E0%A4%A8%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgl4KSw4KS+4KSu4KSy4KWA4KSy4KS+IOCkruCliOCkpuCkvuCkqBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%B2%E0%A5%80%E0%A4%B2%E0%A4%BE+%E0%A4%AE%E0%A5%88%E0%A4%A6%E0%A4%BE%E0%A4%A8%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgl4KSw4KS+4KSu4KSy4KWA4KSy4KS+IOCkruCliOCkpuCkvuCkqBgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAl4KSw4KS+4KSu4KSy4KWA4KSy4KS+IOCkruCliOCkpuCkvuCkqAoAA7hQwb/TjzDgBgAEAAoPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "श्री हरि": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJGM0NmUzZGUyLTI2MjktNDg0MC04ZjliLWNmYTcwZjUyMDdhNAsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACAsABAAAABbgpLbgpY3gpLDgpYAg4KS54KSw4KS/DwAFCwAAAAEAAAAp4KS24KWN4KSw4KWAIOCkueCksOCkvyDgpLXgpL/gpLfgpY3gpKPgpYEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "c46e3de2-2629-4840-8f9b-cfa70f5207a4",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 8,
+              "relatedTerms": [
+                "श्री हरि विष्णु"
+              ],
+              "trendName": "श्री हरि"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "श्री हरि",
+        "rank": "8",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "31.3K posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80+%E0%A4%B9%E0%A4%B0%E0%A4%BF%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgW4KS24KWN4KSw4KWAIOCkueCksOCkvxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80+%E0%A4%B9%E0%A4%B0%E0%A4%BF%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgW4KS24KWN4KSw4KWAIOCkueCksOCkvxgkYzQ2ZTNkZTItMjYyOS00ODQwLThmOWItY2ZhNzBmNTIwN2E0AAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAW4KS24KWN4KSw4KWAIOCkueCksOCkvwoAA7hQwb/TjzDgBgAEAAgPAAULAAAAAQAAACngpLbgpY3gpLDgpYAg4KS54KSw4KS/IOCkteCkv+Ckt+CljeCko+ClgQgABgAAAAMA"
+    }
+  }
+}

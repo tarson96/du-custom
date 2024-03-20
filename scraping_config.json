@@ -1,0 +1,560 @@
+{
+  "scraper_configs": [
+    {
+      "scraper_id": "X.flash",
+      "cadence_seconds": 5,
+      "labels_to_scrape": [
+        {
+          "label_choices": [
+            "#sun",
+            "#space",
+            "#earth",
+            "#ai",
+            "#ml",
+            "#LLM",
+            
+            "#ML",
+            "#python",
+            "#javascript",
+            "#rust",
+            "#shameful",
+            "#dogecoin",
+            "#violence",
+            "#kaspa",
+            "#OnlyHopeRahulGandhi",
+            "#UbitCoinCryptoRevolution",
+            "#Grok-1",
+            "#humans",
+            "#mesh",
+            "#3d",
+            "#reddit",
+            "#aids",
+            "#cancer",
+            "#heart",
+            "#DNA",
+            "#quantumComputing",
+            
+            "#Finance",
+            
+            "#ships",
+            "#water",
+            "#NLP",
+            "#NaturalLanguageProcessing",
+            "#Binance",
+            "#mars",
+            "#XRP",
+            "#elon",
+            "#Neuroscience",
+            
+            "#DayTrading",
+            "#grok",
+            "#opensource",
+            "#trading",
+            "#SwingTrading",
+            "#OptionsTrading",
+            "#DistributedComputing"
+          ],
+          "max_data_entities": 1000,
+          "max_age_hint_minutes": 4500
+        },
+        {
+          "label_choices": [
+            "#mars"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 120,
+          "max_data_entities": 700
+        },
+        {
+          "label_choices": [
+            "#gold"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#aliens"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#science"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 40,
+          "max_data_entities": 200
+        },
+        {
+          "label_choices": [
+            "#mit"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#google"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 40,
+          "max_data_entities": 200
+        },
+        {
+          "label_choices": [
+            "#meta"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#spacex"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 40,
+          "max_data_entities": 200
+        },
+        {
+          "label_choices": [
+            "#nvidia"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#tesla"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#dogs"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#memes"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 40,
+          "max_data_entities": 200
+        },
+        {
+          "label_choices": [
+            "#memecoins"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        
+        {
+          "label_choices": [
+            "#twitter"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 40,
+          "max_data_entities": 200
+        },
+        {
+          "label_choices": [
+            "#altcoins"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#bitcoinmining"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#elonmusk"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 60,
+          "max_data_entities": 400
+        },
+        {
+          "label_choices": [
+            "#openai"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 100,
+          "max_data_entities": 700
+        },
+        
+        
+        {
+          "label_choices": [
+            "#Crypto"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 400,
+          "max_data_entities": 1000
+        },
+        
+        {
+          "label_choices": [
+            "#darkweb"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#Economy"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#money"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 400,
+          "max_data_entities": 1000
+        },
+        
+        {
+          "label_choices": [
+            "#gold"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#silver"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#news"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 400,
+          "max_data_entities": 3000
+        },
+        
+        {
+          "label_choices": [
+            "#virus"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#china"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#usa"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#war"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#gaza"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#hamas"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#ww3"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 90,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#israel"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#hamas"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#Genomics"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#bittensor",
+            "#bittensor",
+            "#bittensor",
+            "#bittensor",
+            "#bitcoincharts",
+            "#bitcoiner",
+            "#bitcoinexchange",
+            "#bitcoinmining",
+            "#bitcoinnews",
+            "#bitcoinprice",
+            "#bitcointechnology",
+            "#bitcointrading"
+          ],
+          "max_age_hint_minutes": 6500,
+          "max_data_entities": 1000
+        },
+       
+        {
+          "label_choices": [
+            "#zomato"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 300
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 400,
+          "max_data_entities": 3000
+        },
+        {
+          "label_choices": [
+            "#deepmind"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 300
+        },
+        {
+          "label_choices": [
+            "#fomc"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 300
+        },
+        {
+          "label_choices": [
+            "#yahoo",
+            "#yahoofinance"
+          ],
+          "max_age_hint_minutes": 500,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 30,
+          "max_data_entities": 500
+        },
+        {
+          "label_choices": [
+            "#tao"
+          ],
+          "max_age_hint_minutes": 500,
+          "max_data_entities": 900
+        },
+        {
+          "label_choices": [
+            "#genai"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 300
+        },
+        {
+          "label_choices": [
+            "#gbtc"
+          ],
+          "max_age_hint_minutes": 1000,
+          "max_data_entities": 300
+        },
+        {
+          "label_choices": [],
+          "max_age_hint_minutes": 3000,
+          "max_data_entities": 3000
+        }
+      ]
+    },
+    {
+      "scraper_id": "Reddit.custom",
+      "cadence_seconds": 150,
+      "labels_to_scrape": [
+        {
+          "label_choices": [
+            "r/deepweb",
+            "r/algorithmictrading",
+            "r/investing",
+            "r/wallstreetbets",
+            "r/TradingIndicators",
+            "r/conspiracytheories",
+            "r/text",
+            "r/thenextdepression",
+            "r/naturalbodybuilding",
+            "r/spacetravel",
+            "r/philosophy",
+            "r/spacetime",
+            "r/therewasanattempt",
+            "r/zodiac",
+            "r/thefutureofmoney",
+            "r/decentralization",
+            "r/bigdata",
+            "r/politicalviews",
+            "r/geopolitics",
+            "r/web3",
+            "r/familyfinance",
+            "r/Bitcoin",
+            "r/BitcoinCash",
+            "r/Bittensor_",
+            "r/Btc",
+            "r/Cryptocurrency",
+            "r/Cryptomarkets",
+            "r/EthereumClassic",
+            "r/Ethtrader",
+            "r/Filecoin",
+            "r/Monero",
+            "r/Polkadot",
+            "r/Solana",
+            "r/WallstreetBets",
+            "r/TradingSystems",
+            "r/CryptoCurrency",
+            "r/altcoins",
+            "r/bankrun",
+            "r/civilunrest",
+            "r/tesla",
+            "r/bitcoinmining",
+            "r/Bogleheads",
+            "r/RealEstate",
+            "r/Forex",
+            "r/ArtificialInteligence",
+            "r/agi",
+            "r/datamining",
+            "r/AINeuroscience",
+            "r/AI_Brainstorming",
+            "r/stocks",
+            "r/pennystocks",
+            "r/ThinkOrSwim",
+            "r/ETFs",
+            "r/BitcoinCash",
+            "r/ai",
+            "r/dataengineering",
+            "r/programming",
+            "r/AskProgramming",
+            "r/chatgpt",
+            "r/QualityAssurance",
+            "r/softwaretesting",
+            "r/GraphicsProgramming",
+            "r/dataviz",
+            "r/GenerativeModels",
+            "r/machinelearning",
+            "r/singularity",
+            "r/LocalLLaMA",
+            "r/learnmachinelearning",
+            "r/MLQuestions",
+            "r/CasualConversation",
+            "r/explainlikeimfive",
+            "r/datascience",
+            "r/computervision",
+            "r/analytics",
+            "r/privacy",
+            "r/stablediffusion",
+            "r/penpals",
+            "r/netsec",
+            "r/TOR",
+            "r/Onions",
+            "r/security",
+            "r/hacking",
+            "r/spaceexploration",
+            "r/spaceflight",
+            "r/spaceengineers",
+            "r/spaceX",
+            "r/esa",
+            "r/nasa",
+            "r/linguistics",
+            "r/aiArt"
+          ],
+          "max_data_entities": 1000,
+          "max_age_hint_minutes": 15
+        }
+      ]
+    }
+  ]
+}

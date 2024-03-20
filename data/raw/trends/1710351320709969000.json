@@ -1,0 +1,2016 @@
+{
+  "#BjpCandidateList": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAALAAQAAAARI0JqcENhbmRpZGF0ZUxpc3QKAAcYiN+iZtYQAA8ACQoAAAABC8RFWoQVwAEKAAoLxEVahBXAAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767908742345920512",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 0,
+              "topicIds": [
+                "847878884917886977"
+              ],
+              "trendName": "#BjpCandidateList"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#BjpCandidateList",
+        "rank": "1",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "15.2K posts",
+          "url": {
+            "url": "twitter://search/?query=%23BjpCandidateList&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgRI0JqcENhbmRpZGF0ZUxpc3QYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23BjpCandidateList&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgRI0JqcENhbmRpZGF0ZUxpc3QYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAARI0JqcENhbmRpZGF0ZUxpc3QKAAO4UMG/048w4AYABAAADwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "#JanasenaFormationDay": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAMLAAQAAAAVI0phbmFzZW5hRm9ybWF0aW9uRGF5CgAHGIju56DaMAAPAAkKAAAAAQumqRHLVOAACgAKC6apEctU4AAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767925532346429440",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "839544274442051584",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 3,
+              "topicIds": [
+                "839544274442051584"
+              ],
+              "trendName": "#JanasenaFormationDay"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#JanasenaFormationDay",
+        "rank": "4",
+        "trendMetadata": {
+          "domainContext": "Entertainment · Trending",
+          "metaDescription": "21.6K posts",
+          "url": {
+            "url": "twitter://search/?query=%23JanasenaFormationDay&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgVI0phbmFzZW5hRm9ybWF0aW9uRGF5GCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23JanasenaFormationDay&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgVI0phbmFzZW5hRm9ybWF0aW9uRGF5GCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAVI0phbmFzZW5hRm9ybWF0aW9uRGF5CgADuFDBv9OPMOAGAAQAAw8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "#VidaaMuyarchi": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAILAAQAAAAOI1ZpZGFhTXV5YXJjaGkPAAULAAAABAAAABAjdmlkYWFtdXlhcmNoaWZsAAAADSN2aWRhYW11eWFjaGkAAAAPI3ZpZGFhbXV5YXJhY2hpAAAADSN2aWRhbXV5YXJjaGkKAAcYiP2/ahtQAQ8ACQoAAAABC6apEctU4AAKAAoLpqkRy1TgAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767941852303675393",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "839544274442051584",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 2,
+              "relatedTerms": [
+                "#vidaamuyarchifl",
+                "#vidaamuyachi",
+                "#vidaamuyarachi",
+                "#vidamuyarchi"
+              ],
+              "topicIds": [
+                "839544274442051584"
+              ],
+              "trendName": "#VidaaMuyarchi"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#VidaaMuyarchi",
+        "rank": "3",
+        "trendMetadata": {
+          "domainContext": "Entertainment · Trending",
+          "metaDescription": "101K posts",
+          "url": {
+            "url": "twitter://search/?query=%23VidaaMuyarchi&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgOI1ZpZGFhTXV5YXJjaGkYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23VidaaMuyarchi&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgOI1ZpZGFhTXV5YXJjaGkYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAOI1ZpZGFhTXV5YXJjaGkKAAO4UMG/048w4AYABAACDwAFCwAAAAQAAAAQI3ZpZGFhbXV5YXJjaGlmbAAAAA0jdmlkYWFtdXlhY2hpAAAADyN2aWRhYW11eWFyYWNoaQAAAA0jdmlkYW11eWFyY2hpCAAGAAAAAwA="
+    }
+  },
+  "#VisionVisakha": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAELAAQAAAAOI1Zpc2lvblZpc2FraGEPAAkKAAAABRKFnrsQlaAADoYTKcyUYAER2iVQnBRwAhHtGgUHFaABC6jYuDBU0AAKAAoShZ67EJWgAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1334647390859534336",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 1,
+              "topicIds": [
+                "1334647390859534336",
+                "1046545033657081857",
+                "1286381671713894402",
+                "1291717277021216769",
+                "840159616101044224"
+              ],
+              "trendName": "#VisionVisakha"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#VisionVisakha",
+        "rank": "2",
+        "trendMetadata": {
+          "domainContext": "Visakhapatnam · Trending",
+          "metaDescription": "1,925 posts",
+          "url": {
+            "url": "twitter://search/?query=%23VisionVisakha&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgOI1Zpc2lvblZpc2FraGEYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23VisionVisakha&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgOI1Zpc2lvblZpc2FraGEYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAOI1Zpc2lvblZpc2FraGEKAAO4UMG/048w4AYABAABDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "#satoshiVM": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADQ6bG9jYXRpb25fcmVxdWVzdDpoYXNodGFnX3RyZW5kOnRheGlfY291bnRyeV9zb3VyY2U6BgADAAQLAAQAAAAKI3NhdG9zaGlWTQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:hashtag_trend:taxi_country_source:",
+              "position": 4,
+              "trendName": "#satoshiVM"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "#satoshiVM",
+        "rank": "5",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "1,856 posts",
+          "url": {
+            "url": "twitter://search/?query=%23satoshiVM&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgKI3NhdG9zaGlWTRgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%23satoshiVM&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgKI3NhdG9zaGlWTRgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAKI3NhdG9zaGlWTQoAA7hQwb/TjzDgBgAEAAQPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "Bangalore South": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEgsABAAAAA9CYW5nYWxvcmUgU291dGgPAAULAAAAAQAAAA9iYW5nYWxvcmUgbm9ydGgKAAcYiRObJFrwAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767965885770428416",
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 18,
+              "relatedTerms": [
+                "bangalore north"
+              ],
+              "trendName": "Bangalore South"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Bangalore South",
+        "rank": "19",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "1,617 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Bangalore+South%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgPQmFuZ2Fsb3JlIFNvdXRoGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Bangalore+South%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgPQmFuZ2Fsb3JlIFNvdXRoGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAPQmFuZ2Fsb3JlIFNvdXRoCgADuFDBv9OPMOAGAAQAEg8ABQsAAAABAAAAD2JhbmdhbG9yZSBub3J0aAgABgAAAAMA"
+    }
+  },
+  "Bengaluru South": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFAsABAAAAA9CZW5nYWx1cnUgU291dGgPAAULAAAAAQAAAA9iZW5nYWx1cnUgbm9ydGgPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 20,
+              "relatedTerms": [
+                "bengaluru north"
+              ],
+              "trendName": "Bengaluru South"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Bengaluru South",
+        "rank": "21",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "2,418 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Bengaluru+South%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgPQmVuZ2FsdXJ1IFNvdXRoGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Bengaluru+South%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgPQmVuZ2FsdXJ1IFNvdXRoGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAPQmVuZ2FsdXJ1IFNvdXRoCgADuFDBv9OPMOAGAAQAFA8ABQsAAAABAAAAD2JlbmdhbHVydSBub3J0aAgABgAAAAMA"
+    }
+  },
+  "CM of Karnataka": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAHAsABAAAAA9DTSBvZiBLYXJuYXRha2EPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 28,
+              "trendName": "CM of Karnataka"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "CM of Karnataka",
+        "rank": "29",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "4,048 posts",
+          "url": {
+            "url": "twitter://search/?query=%22CM+of+Karnataka%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgPQ00gb2YgS2FybmF0YWthGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22CM+of+Karnataka%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgPQ00gb2YgS2FybmF0YWthGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAPQ00gb2YgS2FybmF0YWthCgADuFDBv9OPMOAGAAQAHA8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Delhi Capitals": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEQsABAAAAA5EZWxoaSBDYXBpdGFscwoABxiI/joBm7AADwAJCgAAAAIMda1X0BVgAAvEWQGo1WABCgAKDHWtV9AVYAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767942378831458304",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "897814293395103744",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 17,
+              "topicIds": [
+                "897814293395103744",
+                "847900493514891265"
+              ],
+              "trendName": "Delhi Capitals"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Delhi Capitals",
+        "rank": "18",
+        "trendMetadata": {
+          "domainContext": "Cricket · Trending",
+          "metaDescription": "3,388 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Delhi+Capitals%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgORGVsaGkgQ2FwaXRhbHMYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Delhi+Capitals%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgORGVsaGkgQ2FwaXRhbHMYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAORGVsaGkgQ2FwaXRhbHMKAAO4UMG/048w4AYABAARDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "Devin": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGQsABAAAAAVEZXZpbgoABxiHxKq0G5AGDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767597616211398662",
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 25,
+              "trendName": "Devin"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Devin",
+        "rank": "26",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "40.2K posts",
+          "url": {
+            "url": "twitter://search/?query=Devin&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgFRGV2aW4YJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Devin&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgFRGV2aW4YJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAFRGV2aW4KAAO4UMG/048w4AYABAAZDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "Hobi": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGwsABAAAAARIb2JpCgAHGIjzeVbaAAAPAAkKAAAAAwxTLu5qFMABC8MDL9xUMAAUsbDqNdRgAAoACgxTLu5qFMABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767930556216639488",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "888105153038958593",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 27,
+              "topicIds": [
+                "888105153038958593",
+                "847524658970636288",
+                "1491167471608291328"
+              ],
+              "trendName": "Hobi"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Hobi",
+        "rank": "28",
+        "trendMetadata": {
+          "domainContext": "K-pop · Trending",
+          "metaDescription": "39.8K posts",
+          "url": {
+            "url": "twitter://search/?query=Hobi&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgESG9iaRgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Hobi&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgESG9iaRgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAESG9iaQoAA7hQwb/TjzDgBgAEABsPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "Mumbai North": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADQsABAAAAAxNdW1iYWkgTm9ydGgKAAcYiN+iZtYQAA8ACQoAAAACC8RFWoQVwAEO2YUezlWwAAoACgvERVqEFcABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767908742345920512",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 13,
+              "topicIds": [
+                "847878884917886977",
+                "1070032753834438656"
+              ],
+              "trendName": "Mumbai North"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Mumbai North",
+        "rank": "14",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "3,142 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Mumbai+North%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgMTXVtYmFpIE5vcnRoGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Mumbai+North%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgMTXVtYmFpIE5vcnRoGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAMTXVtYmFpIE5vcnRoCgADuFDBv9OPMOAGAAQADQ8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Mysuru": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGAsABAAAAAZNeXN1cnUPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 24,
+              "trendName": "Mysuru"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Mysuru",
+        "rank": "25",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "5,018 posts",
+          "url": {
+            "url": "twitter://search/?query=Mysuru&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgGTXlzdXJ1GCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Mysuru&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgGTXlzdXJ1GCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAGTXlzdXJ1CgADuFDBv9OPMOAGAAQAGA8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Poonam Y": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMABgsABAAAAAhQb29uYW0gWQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 6,
+              "trendName": "Poonam Y"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Poonam Y",
+        "rank": "7",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "url": {
+            "url": "twitter://search/?query=%22Poonam+Y%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgIUG9vbmFtIFkYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Poonam+Y%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgIUG9vbmFtIFkYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAIUG9vbmFtIFkKAAO4UMG/048w4AYABAAGDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "Pratap Simha": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMABQsABAAAAAxQcmF0YXAgU2ltaGEPAAULAAAAAgAAAAZwcmF0YXAAAAAFc2ltaGEKAAcYiOyCtdcwAA8ACQoAAAABC8RFWoQVwAEKAAoLxEVahBXAAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767922899883601920",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 5,
+              "relatedTerms": [
+                "pratap",
+                "simha"
+              ],
+              "topicIds": [
+                "847878884917886977"
+              ],
+              "trendName": "Pratap Simha"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Pratap Simha",
+        "rank": "6",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "5,692 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Pratap+Simha%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgMUHJhdGFwIFNpbWhhGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Pratap+Simha%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgMUHJhdGFwIFNpbWhhGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAMUHJhdGFwIFNpbWhhCgADuFDBv9OPMOAGAAQABQ8ABQsAAAACAAAABnByYXRhcAAAAAVzaW1oYQgABgAAAAMA"
+    }
+  },
+  "Pritam": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADgsABAAAAAZQcml0YW0KAAcYiRLmKVowCw8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767965108465184779",
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 14,
+              "trendName": "Pritam"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Pritam",
+        "rank": "15",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "url": {
+            "url": "twitter://search/?query=Pritam&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgGUHJpdGFtGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Pritam&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgGUHJpdGFtGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAGUHJpdGFtCgADuFDBv9OPMOAGAAQADg8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Sushant One OfHis Kind": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMABwsABAAAABZTdXNoYW50IE9uZSBPZkhpcyBLaW5kDwAJCgAAAAUPM3kVmNRwAQumqRHLVOAAEhe4l+6VkAISF7n0JtQwARIXuWn9FOAACgAKDzN5FZjUcAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1095352268046495745",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 7,
+              "topicIds": [
+                "1095352268046495745",
+                "839544274442051584",
+                "1303713579829399554",
+                "1303715075421646849",
+                "1303714482015756288"
+              ],
+              "trendName": "Sushant One OfHis Kind"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Sushant One OfHis Kind",
+        "rank": "8",
+        "trendMetadata": {
+          "domainContext": "Celebrities · Trending",
+          "metaDescription": "6,334 posts",
+          "url": {
+            "url": "twitter://search/?query=%22Sushant+One+OfHis+Kind%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgWU3VzaGFudCBPbmUgT2ZIaXMgS2luZBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22Sushant+One+OfHis+Kind%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgWU3VzaGFudCBPbmUgT2ZIaXMgS2luZBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAWU3VzaGFudCBPbmUgT2ZIaXMgS2luZAoAA7hQwb/TjzDgBgAEAAcPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "TOMORROW CONCEPT TEASER": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFwsABAAAABdUT01PUlJPVyBDT05DRVBUIFRFQVNFUgoABxiI8oEsGsADDwAJCgAAAAQMUy7uahTAAQvDAy/cVDAAFLGw6jXUYAAPCQB1h1TQAAoACgxTLu5qFMABDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767929490347573251",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "888105153038958593",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 23,
+              "topicIds": [
+                "888105153038958593",
+                "847524658970636288",
+                "1491167471608291328",
+                "1083397690140971008"
+              ],
+              "trendName": "TOMORROW CONCEPT TEASER"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "TOMORROW CONCEPT TEASER",
+        "rank": "24",
+        "trendMetadata": {
+          "domainContext": "K-pop · Trending",
+          "metaDescription": "30.2K posts",
+          "url": {
+            "url": "twitter://search/?query=%22TOMORROW+CONCEPT+TEASER%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgXVE9NT1JST1cgQ09OQ0VQVCBURUFTRVIYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22TOMORROW+CONCEPT+TEASER%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgXVE9NT1JST1cgQ09OQ0VQVCBURUFTRVIYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAXVE9NT1JST1cgQ09OQ0VQVCBURUFTRVIKAAO4UMG/048w4AYABAAXDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "TikTok": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADwsABAAAAAZUaWtUb2sKAAcYiPKBLFogAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767929490351726592",
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 15,
+              "trendName": "TikTok"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "TikTok",
+        "rank": "16",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "1.15M posts",
+          "url": {
+            "url": "twitter://search/?query=TikTok&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgGVGlrVG9rGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=TikTok&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgGVGlrVG9rGCQyNDJjNGI4NC03YzQwLTRmNzEtODQyYy1hNGIwNDgzYWNkMzIAAA=="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAGVGlrVG9rCgADuFDBv9OPMOAGAAQADw8ABQsAAAAACAAGAAAAAwA="
+    }
+  },
+  "Visakhapatnam": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMADAsABAAAAA1WaXNha2hhcGF0bmFtDwAJCgAAAAUShZ67EJWgAA6GEynMlGABEdolUJwUcAIR7RoFBxWgAQuo2LgwVNAACgAKEoWeuxCVoAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "displayedTopicId": "1334647390859534336",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 12,
+              "topicIds": [
+                "1334647390859534336",
+                "1046545033657081857",
+                "1286381671713894402",
+                "1291717277021216769",
+                "840159616101044224"
+              ],
+              "trendName": "Visakhapatnam"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "Visakhapatnam",
+        "rank": "13",
+        "trendMetadata": {
+          "domainContext": "Visakhapatnam · Trending",
+          "metaDescription": "3,295 posts",
+          "url": {
+            "url": "twitter://search/?query=Visakhapatnam&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgNVmlzYWtoYXBhdG5hbRgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=Visakhapatnam&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgNVmlzYWtoYXBhdG5hbRgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAANVmlzYWtoYXBhdG5hbQoAA7hQwb/TjzDgBgAEAAwPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "अनुराग ठाकुर": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACQsABAAAACLgpIXgpKjgpYHgpLDgpL7gpJcg4KSg4KS+4KSV4KWB4KSwCgAHGIjfombWEAAPAAkKAAAAAgvERVqEFcABDtmFHs5VsAAKAAoLxEVahBXAAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767908742345920512",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 9,
+              "topicIds": [
+                "847878884917886977",
+                "1070032753834438656"
+              ],
+              "trendName": "अनुराग ठाकुर"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "अनुराग ठाकुर",
+        "rank": "10",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "4,359 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%97+%E0%A4%A0%E0%A4%BE%E0%A4%95%E0%A5%81%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgi4KSF4KSo4KWB4KSw4KS+4KSXIOCkoOCkvuCkleClgeCksBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%97+%E0%A4%A0%E0%A4%BE%E0%A4%95%E0%A5%81%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgi4KSF4KSo4KWB4KSw4KS+4KSXIOCkoOCkvuCkleClgeCksBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAi4KSF4KSo4KWB4KSw4KS+4KSXIOCkoOCkvuCkleClgeCksAoAA7hQwb/TjzDgBgAEAAkPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "अशोक तंवर": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAGgsABAAAABngpIXgpLbgpYvgpJUg4KSk4KSC4KS14KSwDwAMCgAAAAACAA0AAA==",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 26,
+              "trendName": "अशोक तंवर"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "अशोक तंवर",
+        "rank": "27",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%85%E0%A4%B6%E0%A5%8B%E0%A4%95+%E0%A4%A4%E0%A4%82%E0%A4%B5%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgZ4KSF4KS24KWL4KSVIOCkpOCkguCkteCksBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%85%E0%A4%B6%E0%A5%8B%E0%A4%95+%E0%A4%A4%E0%A4%82%E0%A4%B5%E0%A4%B0%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgZ4KSF4KS24KWL4KSVIOCkpOCkguCkteCksBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAZ4KSF4KS24KWL4KSVIOCkpOCkguCkteCksAoAA7hQwb/TjzDgBgAEABoPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "गढ़वाल लोकसभा": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFQsABAAAACXgpJfgpKLgpLzgpLXgpL7gpLIg4KSy4KWL4KSV4KS44KSt4KS+CgAHGIjrE0lbkAAPAAkKAAAAAQvERVqEFcABCgAKC8RFWoQVwAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767921321810563072",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 21,
+              "topicIds": [
+                "847878884917886977"
+              ],
+              "trendName": "गढ़वाल लोकसभा"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "गढ़वाल लोकसभा",
+        "rank": "22",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%97%E0%A4%A2%E0%A4%BC%E0%A4%B5%E0%A4%BE%E0%A4%B2+%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%B8%E0%A4%AD%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgl4KSX4KSi4KS84KS14KS+4KSyIOCksuCli+CkleCkuOCkreCkvhgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%97%E0%A4%A2%E0%A4%BC%E0%A4%B5%E0%A4%BE%E0%A4%B2+%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%B8%E0%A4%AD%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgl4KSX4KSi4KS84KS14KS+4KSyIOCksuCli+CkleCkuOCkreCkvhgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAl4KSX4KSi4KS84KS14KS+4KSyIOCksuCli+CkleCkuOCkreCkvgoAA7hQwb/TjzDgBgAEABUPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "नितिन गडकरी": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEAsABAAAAB/gpKjgpL/gpKTgpL/gpKgg4KSX4KSh4KSV4KSw4KWACgAHGIjfombWEAAPAAkKAAAAAQvERVqEFcABCgAKC8RFWoQVwAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767908742345920512",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 16,
+              "topicIds": [
+                "847878884917886977"
+              ],
+              "trendName": "नितिन गडकरी"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "नितिन गडकरी",
+        "rank": "17",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "3,527 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%A8%E0%A4%BF%E0%A4%A4%E0%A4%BF%E0%A4%A8+%E0%A4%97%E0%A4%A1%E0%A4%95%E0%A4%B0%E0%A5%80%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgf4KSo4KS/4KSk4KS/4KSoIOCkl+CkoeCkleCksOClgBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%A8%E0%A4%BF%E0%A4%A4%E0%A4%BF%E0%A4%A8+%E0%A4%97%E0%A4%A1%E0%A4%95%E0%A4%B0%E0%A5%80%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgf4KSo4KS/4KSk4KS/4KSoIOCkl+CkoeCkleCksOClgBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAf4KSo4KS/4KSk4KS/4KSoIOCkl+CkoeCkleCksOClgAoAA7hQwb/TjzDgBgAEABAPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "पीयूष गोयल": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACAsABAAAABzgpKrgpYDgpK/gpYLgpLcg4KSX4KWL4KSv4KSyCgAHGIjfombWEAAPAAkKAAAAAQvERVqEFcABCgAKC8RFWoQVwAEPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767908742345920512",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 8,
+              "topicIds": [
+                "847878884917886977"
+              ],
+              "trendName": "पीयूष गोयल"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "पीयूष गोयल",
+        "rank": "9",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "2,935 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%AA%E0%A5%80%E0%A4%AF%E0%A5%82%E0%A4%B7+%E0%A4%97%E0%A5%8B%E0%A4%AF%E0%A4%B2%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgc4KSq4KWA4KSv4KWC4KS3IOCkl+Cli+Ckr+CkshgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%AA%E0%A5%80%E0%A4%AF%E0%A5%82%E0%A4%B7+%E0%A4%97%E0%A5%8B%E0%A4%AF%E0%A4%B2%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgc4KSq4KWA4KSv4KWC4KS3IOCkl+Cli+Ckr+CkshgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAc4KSq4KWA4KSv4KWC4KS3IOCkl+Cli+Ckr+CksgoAA7hQwb/TjzDgBgAEAAgPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "पूर्वी दिल्ली": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACgsABAAAACXgpKrgpYLgpLDgpY3gpLXgpYAg4KSm4KS/4KSy4KWN4KSy4KWADwAFCwAAAAEAAAA44KSq4KWC4KSw4KWN4KS14KWAIOCkpuCkv+CksuCljeCksuClgCDgpLLgpYvgpJXgpLjgpK3gpL4KAAcYiPHKz9cwAA8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767928707115593728",
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 10,
+              "relatedTerms": [
+                "पूर्वी दिल्ली लोकसभा"
+              ],
+              "trendName": "पूर्वी दिल्ली"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "पूर्वी दिल्ली",
+        "rank": "11",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "2,468 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%80+%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgl4KSq4KWC4KSw4KWN4KS14KWAIOCkpuCkv+CksuCljeCksuClgBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%80+%E0%A4%A6%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%B2%E0%A5%80%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgl4KSq4KWC4KSw4KWN4KS14KWAIOCkpuCkv+CksuCljeCksuClgBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAl4KSq4KWC4KSw4KWN4KS14KWAIOCkpuCkv+CksuCljeCksuClgAoAA7hQwb/TjzDgBgAEAAoPAAULAAAAAQAAADjgpKrgpYLgpLDgpY3gpLXgpYAg4KSm4KS/4KSy4KWN4KSy4KWAIOCksuCli+CkleCkuOCkreCkvggABgAAAAMA"
+    }
+  },
+  "लोकसभा चुनाव हेतु": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAHQsABAAAAC/gpLLgpYvgpJXgpLjgpK3gpL4g4KSa4KWB4KSo4KS+4KS1IOCkueClh+CkpOClgQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 29,
+              "trendName": "लोकसभा चुनाव हेतु"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "लोकसभा चुनाव हेतु",
+        "rank": "30",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "3,487 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%B8%E0%A4%AD%E0%A4%BE+%E0%A4%9A%E0%A5%81%E0%A4%A8%E0%A4%BE%E0%A4%B5+%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgv4KSy4KWL4KSV4KS44KSt4KS+IOCkmuClgeCkqOCkvuCktSDgpLngpYfgpKTgpYEYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%B8%E0%A4%AD%E0%A4%BE+%E0%A4%9A%E0%A5%81%E0%A4%A8%E0%A4%BE%E0%A4%B5+%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgv4KSy4KWL4KSV4KS44KSt4KS+IOCkmuClgeCkqOCkvuCktSDgpLngpYfgpKTgpYEYJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgAA"
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAv4KSy4KWL4KSV4KS44KSt4KS+IOCkmuClgeCkqOCkvuCktSDgpLngpYfgpKTgpYEKAAO4UMG/048w4AYABAAdDwAFCwAAAAAIAAYAAAADAA=="
+    }
+  },
+  "सिंह रावत": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAEwsABAAAABngpLjgpL/gpILgpLkg4KSw4KS+4KS14KSkCgAHGIjrE0lbkAAPAAwKAAAAAAIADQAA",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767921321810563072",
+              "containsCuratedTitle": false,
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 19,
+              "trendName": "सिंह रावत"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "सिंह रावत",
+        "rank": "20",
+        "trendMetadata": {
+          "domainContext": "Trending",
+          "metaDescription": "2,328 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9+%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A4%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgZ4KS44KS/4KSC4KS5IOCksOCkvuCkteCkpBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9+%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A4%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgZ4KS44KS/4KSC4KS5IOCksOCkvuCkteCkpBgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAZ4KS44KS/4KSC4KS5IOCksOCkvuCkteCkpAoAA7hQwb/TjzDgBgAEABMPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "हरिद्वार लोकसभा": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMACwsABAAAACvgpLngpLDgpL/gpKbgpY3gpLXgpL7gpLAg4KSy4KWL4KSV4KS44KSt4KS+CgAHGIjrE0lbkAAPAAkKAAAAAgvERVqEFcABDtmFHs5VsAAKAAoLxEVahBXAAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767921321810563072",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 11,
+              "topicIds": [
+                "847878884917886977",
+                "1070032753834438656"
+              ],
+              "trendName": "हरिद्वार लोकसभा"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "हरिद्वार लोकसभा",
+        "rank": "12",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%B9%E0%A4%B0%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0+%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%B8%E0%A4%AD%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgr4KS54KSw4KS/4KSm4KWN4KS14KS+4KSwIOCksuCli+CkleCkuOCkreCkvhgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%B9%E0%A4%B0%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B0+%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%B8%E0%A4%AD%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgr4KS54KSw4KS/4KSm4KWN4KS14KS+4KSwIOCksuCli+CkleCkuOCkreCkvhgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAr4KS54KSw4KS/4KSm4KWN4KS14KS+4KSwIOCksuCli+CkleCkuOCkreCkvgoAA7hQwb/TjzDgBgAEAAsPAAULAAAAAAgABgAAAAMA"
+    }
+  },
+  "हर्ष मल्होत्रा": {
+    "clientEventInfo": {
+      "component": "trends",
+      "details": {
+        "guideDetails": {
+          "identifier": "DAABDAABCwABAAAADXRyZW5kc19tb2R1bGULAAIAAAAGdHJlbmRzAAAPAAIMAAAAAQwAAQsAAQAAAA10cmVuZHNfbW9kdWxlCwACAAAABnRyZW5kcwAAAA==",
+          "token": "CwABAAAAJDI0MmM0Yjg0LTdjNDAtNGY3MS04NDJjLWE0YjA0ODNhY2QzMgsAAgAAADM6bG9jYXRpb25fcmVxdWVzdDplbnRpdHlfdHJlbmQ6dGF4aV9jb3VudHJ5X3NvdXJjZToGAAMAFgsABAAAACjgpLngpLDgpY3gpLcg4KSu4KSy4KWN4KS54KWL4KSk4KWN4KSw4KS+CgAHGIjxys/XMAAPAAkKAAAAAgvERVqEFcABDtmFHs5VsAAKAAoLxEVahBXAAQ8ADAoAAAAAAgANAAA=",
+          "transparentGuideDetails": {
+            "trendMetadata": {
+              "associatedCuratedTweetIds": [],
+              "clusterId": "1767928707115593728",
+              "containsCuratedTitle": false,
+              "displayedTopicId": "847878884917886977",
+              "impressionId": "242c4b84-7c40-4f71-842c-a4b0483acd32",
+              "impressionToken": ":location_request:entity_trend:taxi_country_source:",
+              "position": 22,
+              "topicIds": [
+                "847878884917886977",
+                "1070032753834438656"
+              ],
+              "trendName": "हर्ष मल्होत्रा"
+            }
+          }
+        }
+      },
+      "element": "trend"
+    },
+    "content": {
+      "trend": {
+        "associatedCardUrls": [],
+        "name": "हर्ष मल्होत्रा",
+        "rank": "23",
+        "trendMetadata": {
+          "domainContext": "Politics · Trending",
+          "metaDescription": "1,126 posts",
+          "url": {
+            "url": "twitter://search/?query=%22%E0%A4%B9%E0%A4%B0%E0%A5%8D%E0%A4%B7+%E0%A4%AE%E0%A4%B2%E0%A5%8D%E0%A4%B9%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+            "urlType": "DeepLink",
+            "urtEndpointOptions": {
+              "requestParams": {
+                "cd": "HBgo4KS54KSw4KWN4KS3IOCkruCksuCljeCkueCli+CkpOCljeCksOCkvhgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+              }
+            }
+          }
+        },
+        "url": {
+          "url": "twitter://search/?query=%22%E0%A4%B9%E0%A4%B0%E0%A5%8D%E0%A4%B7+%E0%A4%AE%E0%A4%B2%E0%A5%8D%E0%A4%B9%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BE%22&src=trend_click&pc=true&vertical=trends",
+          "urlType": "DeepLink",
+          "urtEndpointOptions": {
+            "requestParams": {
+              "cd": "HBgo4KS54KSw4KWN4KS3IOCkruCksuCljeCkueCli+CkpOCljeCksOCkvhgkMjQyYzRiODQtN2M0MC00ZjcxLTg0MmMtYTRiMDQ4M2FjZDMyAAA="
+            }
+          }
+        }
+      }
+    },
+    "feedbackInfo": {
+      "clientEventInfo": {
+        "action": "click",
+        "component": "trends",
+        "element": "feedback"
+      },
+      "feedbackKeys": [
+        "trend_not_interested_in_this_feedback_key",
+        "trend_abusive_or_harmful_feedback_key"
+      ],
+      "feedbackMetadata": "DwABCwAAAAEAAAAo4KS54KSw4KWN4KS3IOCkruCksuCljeCkueCli+CkpOCljeCksOCkvgoAA7hQwb/TjzDgBgAEABYPAAULAAAAAAgABgAAAAMA"
+    }
+  }
+}
