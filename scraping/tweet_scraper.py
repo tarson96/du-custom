@@ -1,5 +1,5 @@
 # import sys
-# sys.path.append("/mnt/d/Google Drive/Temp/Desktop/Freelance/Clients/Potiential Clients/Varun S/data-universe")
+# sys.path.append("/mnt/d/Google Drive/Temp/Desktop/Freelance/Clients/Potiential Clients/Varun S/code/du-custom")
 import orjson
 from twitter import search, scraper
 from twitter.search import Search, get_headers
@@ -74,12 +74,13 @@ def login_v2(email: str, username: str, password: str, **kwargs) -> Client:
     return client
 
 class CredentialManager_V2:
-
     def verify_all_credentials(self, username=None):
         def process_credential(credential):
             # bt.logging.info(f"Verifying credential: {credential['username']}")
             status = self._check_account_status(credential)
             if status == 'active':
+                self.release_credential(credential)
+            if status == 'skip':
                 self.release_credential(credential)
             else:
                 self._update_credential_database(credential, status)
@@ -93,7 +94,7 @@ class CredentialManager_V2:
             if username:
                 credentials = [credential for credential in credentials if credential['username'] == username]
         else:
-            bt.logging.error(f"Failed to fetch credentials: {response.text}")
+            bt.logging.warning(f"Failed to fetch credentials: {response.text}")
             credentials=[]
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_to_credential = {executor.submit(process_credential, credential): credential for credential in credentials}
@@ -104,25 +105,25 @@ class CredentialManager_V2:
                 except Exception as exc:
                     bt.logging.error(f"{credential['username']} generated an exception: {exc}")
         
-        bt.logging.info("Verifying identity verification credentials.")
-        url = "http://tstempmail1.pythonanywhere.com/api/credentials/"
-        response = requests.get(url)
-        if response.status_code == 200:
-            credentials = response.json()
-            if username:
-                credentials = [credential for credential in credentials if credential['username'] == username and credential['status']=='email_verification']
-        else:
-            bt.logging.error(f"Failed to fetch credentials: {response.text}")
-            credentials=[]
+        # bt.logging.info("Verifying identity verification credentials.")
+        # url = "http://tstempmail1.pythonanywhere.com/api/credentials/"
+        # response = requests.get(url)
+        # if response.status_code == 200:
+        #     credentials = response.json()
+        #     if username:
+        #         credentials = [credential for credential in credentials if credential['username'] == username and credential['status']=='email_verification']
+        # else:
+        #     bt.logging.error(f"Failed to fetch credentials: {response.text}")
+        #     credentials=[]
         
-        with ThreadPoolExecutor(max_workers=10) as executor:
-            future_to_credential = {executor.submit(process_credential, credential): credential for credential in credentials}
-            for future in as_completed(future_to_credential):
-                credential = future_to_credential[future]
-                try:
-                    username, status = future.result()
-                except Exception as exc:
-                    bt.logging.error(f"{credential['username']} generated an exception: {exc}")
+        # with ThreadPoolExecutor(max_workers=10) as executor:
+        #     future_to_credential = {executor.submit(process_credential, credential): credential for credential in credentials}
+        #     for future in as_completed(future_to_credential):
+        #         credential = future_to_credential[future]
+        #         try:
+        #             username, status = future.result()
+        #         except Exception as exc:
+        #             bt.logging.error(f"{credential['username']} generated an exception: {exc}")
 
 
 
@@ -135,6 +136,9 @@ class CredentialManager_V2:
                 if status == 'active':
                     bt.logging.info(f"Fetched Credential: {self.credential['username']}")
                     return self.credential
+                elif status == 'skip':
+                    # bt.logging.info(f"There is some issue while fetching credential {self.credential['username']}. Skipping and fetching different one .. ")
+                    return None
                 else:
                     self.release_credential(self.credential)
                     self._update_credential_database(self.credential, status)
@@ -144,15 +148,15 @@ class CredentialManager_V2:
                     requests.get('http://tstempmail1.pythonanywhere.com/api/activate_all/')
                     self.verify_all_credentials()
                     
-                bt.logging.error(f"Error while fetching credentials: {response.text}")
-                self.credential =  None
+                bt.logging.warning(f"Error while fetching credentials: {response.text}")
+                return  None
         except requests.RequestException as e:
             bt.logging.error(f"Failed to fetch credentials: {e}")
 
 
     def _check_account_status(self, credential, retries=3):
         if retries == 0:
-            return 'invalid_credential'
+            return 'skip'
         try:
             results = Search(credential['email'], credential['username'], credential['password'], save=False, debug=0).run(
                 limit=1,
@@ -165,14 +169,14 @@ class CredentialManager_V2:
                 ]
             )[0]
         except Exception as ex:
-            bt.logging.error(f"({credential['username']}) Exception - {ex}")
+            # bt.logging.error(f"({credential['username']}) Exception - {ex}")
             # print(ex.with_traceback())
-            if 'confirm_email' in str(ex):
-                return 'email_verification'
-            elif 'confirmation code' in str(ex):
+            # if 'confirm_email' in str(ex):
+            #     return 'email_verification'
+            if 'confirmation code' in str(ex):
                 return 'code_verification'
             elif 'flow_token' in str(ex):
-                return 'invalid_credential'
+                return 'skip'
             else:
                 retries -= 1
                 return self._check_account_status(credential, retries)
@@ -360,23 +364,21 @@ class Search(Search):
                 params['variables']['cursor'] = cursor
             data, entries, cursor, ratelimit, account_status = await self.backoff(lambda: self.get(client, params), **kwargs)
             res.extend(entries)
-            if len(entries) <= 2 or len(total) >= limit or ratelimit or account_status:  # just cursors
+            if len(entries) <= 2 or len(total) >= limit or ratelimit or account_status!='active':  # just cursors
                 if ratelimit:
-                    self.debug and bt.logging.warning(f'[{RED} ({self.username}) RATE LIMIT EXCEEDED. Returned {len(total)} search results for {query["query"]}{RESET}]')
+                    self.debug and bt.logging.warning(f'[{RED} ({self.username}) RATE LIMIT EXCEEDED.')# Returned {len(total)} search results for {query["query"]}{RESET}]')
                 elif account_status=='locked':
                     self.debug and bt.logging.warning(f'[{RED}fail{RESET}] ({self.username}) ACCOUNT LOCKED')
                 elif self.session.cookies.get('confirmation_code') == 'true' or account_status=='confirmation_code':
-                    bt.logging.error(f'[{RED}fail{RESET}] ({self.username}) CONFIRMATION CODE REQUIRED FOR LOGGING IN')
-                    return {"data": res, "rate_limit": ratelimit, "account_status": 'code_verification'}
-                elif self.session.cookies.get('confirm_email') == 'true' or account_status=='email_verification':
-                    bt.logging.error(f'[{RED}fail{RESET}] ({self.username}) IDENTITY VERIFICATION REQUIRED')
-                    return {"data": res, "rate_limit": ratelimit, "account_status": 'email_verification'}
-                elif self.session.cookies.get('flow_errors') == 'true' or account_status=='invalid_credential':
-                    bt.logging.error(f'[{RED}fail{RESET}] ({self.username}) INVALID CREDENTIALS')
-                    return {"data": res, "rate_limit": ratelimit, "account_status": 'invalid_credential'}
+                    bt.logging.warning(f'[{RED}fail{RESET}] ({self.username}) CONFIRMATION CODE REQUIRED FOR LOGGING IN')
+                    account_status='code_verification'
+                # elif self.session.cookies.get('confirm_email') == 'true' or account_status=='email_verification':
+                #     bt.logging.error(f'[{RED}fail{RESET}] ({self.username}) IDENTITY VERIFICATION REQUIRED')
+                #     account_status = 'email_verification'
                 else:
-                    self.debug and bt.logging.debug(
-                        f'[{GREEN}success{RESET}]({self.username}) Returned {len(total)} search results for {query["query"]}')
+                    account_status = 'active'
+                self.debug and bt.logging.debug(
+                    f'[{GREEN}success{RESET}]({self.username}) Returned {len(total)} search results for {query["query"]}')
                 return {"data": res, "rate_limit": ratelimit, "account_status": account_status}
             total |= set(find_key(entries, 'entryId'))
             self.debug and bt.logging.debug(f'({self.username}) {query["query"]}')
@@ -385,39 +387,34 @@ class Search(Search):
 
     async def backoff(self, fn, **kwargs):
         retries = kwargs.get('retries', 3)
+        entries = []
         for i in range(retries + 1):
             try:
                 data, entries, cursor = await fn()
                 if errors := data.get('errors'):
                     for e in errors:
-                        # if self.debug:
-                        #     bt.logging.warning(f'{YELLOW}({self.username}){e.get("message")}{RESET}')
-                        #     print(e.get("message"))
                         if 'account is temporarily locked' in e.get('message'):
-                            bt.logging.error(f'({self.username}) ACCOUNT LOCKED')
                             return data, entries, cursor, False, 'locked'
                         else:
-                            bt.logging.error(f'({self.username}) {e.get("message")}')
-                            return [], [], '', False, 'invalid_credential'
+                            # bt.logging.error(f'({self.username}) {e.get("message")}')
+                            return data, entries, cursor, False, 'invalid_credential'
                 elif self.session.cookies.get('confirmation_code') == 'true':
-                    return  [], [], '', False, 'code_verification'
-                elif self.session.cookies.get('confirm_email') == 'true':
-                    return  [], [], '', False, 'email_verification'
+                    return  data, entries, cursor, False, 'code_verification'
+                # elif self.session.cookies.get('confirm_email') == 'true':
+                #     return  data, entries, cursor, False, 'email_verification'
                 elif self.session.cookies.get('flow_errors') == 'true':
-                    return  [], [], '', False, 'invalid_credential'
+                    return  data, entries, cursor, False, 'invalid_credential'
                 ids = set(find_key(data, 'entryId'))
                 if len(ids) >= 2:
                     return data, entries, cursor, False, 'active'
             except Exception as e:
-                # bt.logging.error(f'({self.username}) {e}')
-                # print(traceback.print_exc())
                 if self.session.cookies.get('confirmation_code') == 'true':
                     return  None, [], None, False, 'code_verification'
-                elif self.session.cookies.get('confirm_email') == 'true':
-                    return  None, [], None, False, 'email_verification'
+                # elif self.session.cookies.get('confirm_email') == 'true':
+                #     return  None, [], None, False, 'email_verification'
                 elif self.session.cookies.get('flow_errors') == 'true':
                     return  None, [], None, False, 'invalid_credential'
-                return None, [], None, True, 'invalid_credential'
+                return None, [], None, True, 'active'
 
 class TwitterScraper_V1:
     def __init__(self, limit=None, since_date=None, until_date=None, labels = None, uri=None, run_type='debug'):
@@ -542,7 +539,7 @@ class TwitterScraper_V1:
             if not credential:
                 i+=1
                 t = 2 * i + random.random()
-                bt.logging.warning(f" No available credentials. Sleeping for {t} seconds and then verifying all accounts")
+                bt.logging.warning(f" No available credentials. Sleeping for {t} seconds.")
                 time.sleep(t)
                 continue
             if self.is_ratelimit_execeeded(credential):
@@ -680,6 +677,7 @@ def fetch_tweets_in_parallel(since_date, until_date, labels, max_items=100, max_
 
 if __name__ == '__main__':
     start = datetime.now()
+    CredentialManager_V2().verify_all_credentials()
     # c = CredentialManager_V2().request_credential(_type='all')
     # print(c)
     # CredentialManager_V2().release_credential(c)
@@ -692,7 +690,7 @@ if __name__ == '__main__':
     #                 }
     #             ]))
     # print(len(TwitterScraper_V1(labels=['covid'], limit=4000, since_date=datetime(2023, 1, 1), until_date=datetime(2023, 2, 1)).search()))
-    fetch_tweets_in_parallel(datetime(2024, 3, 12), datetime(2024, 3, 14), labels=[], max_items=10000, max_workers=1,run_type='production')
+    # fetch_tweets_in_parallel(datetime(2024, 3, 12), datetime(2024, 3, 14), labels=[], max_items=10000, max_workers=1,run_type='production')
     # TwitterScraper_V1(labels=['#MUFC'], limit=1000, since_date=datetime(2024, 1, 1), until_date=datetime(2024, 3, 1)).trending_hashtags()
     print("Time Taken to scrape: ", (datetime.now() - start).seconds/60)
     # # print(len(search_scrape_v2('since:2023-01-01_00:00:00_UTC until:2023-02-01_00:00:00_UTC covid', 1000)))
