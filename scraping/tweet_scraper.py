@@ -17,6 +17,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 import json
 import traceback
+import string
+import os
 from twitter.login import execute_login_flow, Client, flow_start, flow_instrumentation, flow_username, flow_password, flow_duplication_check, init_guest_token, confirm_email, solve_confirmation_challenge
 # from common.data import DataLabel
 # import asyncio
@@ -27,6 +29,11 @@ from twitter.login import execute_login_flow, Client, flow_start, flow_instrumen
 # bt.logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',
 #                     datefmt='%d-%b-%y %H:%M:%S',
 #                     level=bt.logging.DEBUG)
+
+
+PROXY_USERNAME = os.getenv("PROXY_USERNAME")
+PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
+
 
 def execute_login_flow_v2(client: Client, **kwargs) -> Client | None:
     client = init_guest_token(client)
@@ -47,6 +54,7 @@ def execute_login_flow_v2(client: Client, **kwargs) -> Client | None:
     return client
 
 def login_v2(email: str, username: str, password: str, **kwargs) -> Client:
+    global PROXY_USERNAME, PROXY_PASSWORD
     client = Client(
         cookies={
             "email": email,
@@ -62,7 +70,8 @@ def login_v2(email: str, username: str, password: str, **kwargs) -> Client:
             'x-twitter-active-user': 'yes',
             'x-twitter-client-language': 'en',
         },
-        follow_redirects=True
+        follow_redirects=True,
+        proxies={'http://': f'http://{PROXY_USERNAME}:{PROXY_PASSWORD}@gate.smartproxy.com:10000'}
     )
     client = execute_login_flow_v2(client, **kwargs)
 
@@ -169,7 +178,7 @@ class CredentialManager_V2:
                 ]
             )[0]
         except Exception as ex:
-            # bt.logging.error(f"({credential['username']}) Exception - {ex}")
+            bt.logging.error(f"({credential['username']}) Exception - {ex}")
             # print(ex.with_traceback())
             # if 'confirm_email' in str(ex):
             #     return 'email_verification'
@@ -441,7 +450,7 @@ class TwitterScraper_V1:
             label_query = " OR ".join([label for label in labels])
             query += f" ({label_query})"
         else:
-            query += " e"
+            query += f" {random.choice(string.ascii_letters)}"
             # label_query = " OR ".join([label for label in self.trending_hashtags[0:3]])
             # query += f" ({label_query})"
         if since_id:
@@ -476,7 +485,7 @@ class TwitterScraper_V1:
             if self.is_ratelimit_execeeded(credential):
                 CredentialManager().release_credential(credential)
                 i+=1
-                t = 2 * i + random.random()
+                t = 2 + i + random.random()
                 bt.logging.warning(f"Rate limit exceeded for username. Sleeping for {t} seconds.")
                 time.sleep(t)
                 continue
@@ -534,65 +543,75 @@ class TwitterScraper_V1:
     def search_v2(self):
         data = []
         i = 0
+        retries = 0
         while True:
-            credential = CredentialManager_V2().request_credential(self.run_type)
-            if not credential:
-                i+=1
-                t = 2 * i + random.random()
-                bt.logging.warning(f" No available credentials. Sleeping for {t} seconds.")
-                time.sleep(t)
-                continue
-            if self.is_ratelimit_execeeded(credential):
+            if retries < 5:
+                credential = CredentialManager_V2().request_credential(self.run_type)
+                if not credential:
+                    i+=1
+                    t = 2 + i + random.random()
+                    bt.logging.warning(f" No available credentials. Sleeping for {t} seconds.")
+                    time.sleep(t)
+                    continue
+                if self.is_ratelimit_execeeded(credential):
+                    CredentialManager_V2().release_credential(credential)
+                    i+=1
+                    t = 2 + i + random.random()
+                    bt.logging.warning(f" Rate limit exceeded for username. Sleeping for {t} seconds.")
+                    time.sleep(t)
+                    continue
+                i=1
+                bt.logging.info(f"Using username {credential['username']}.")
+                try:
+                    sc = Search(credential['email'], credential['username'], credential['password'], save=False, debug=1)
+                    results = sc.run(
+                        limit=self.limit,
+                        retries=self.limit,
+                        queries=[
+                            {
+                                'category': 'Latest',
+                                'query': self.query_generator(self.labels, self.since_date, self.until_date, self.since_id)
+                            }
+                        ]
+                    )[0]
+                except Exception as ex:
+                    traceback.print_exc()
+                    bt.logging.error(f" Error occurred while scraping: {ex}")
+                    CredentialManager_V2().release_credential(credential)
+                    retries += 1
+                    continue
                 CredentialManager_V2().release_credential(credential)
-                i+=1
-                t = 2 * i + random.random()
-                bt.logging.warning(f" Rate limit exceeded for username. Sleeping for {t} seconds.")
-                time.sleep(t)
-                continue
-            i=1
-            bt.logging.info(f"Using username {credential['username']}.")
-            try:
-                sc = Search(credential['email'], credential['username'], credential['password'], save=False, debug=1)
-                results = sc.run(
-                    limit=self.limit,
-                    retries=self.limit,
-                    queries=[
-                        {
-                            'category': 'Latest',
-                            'query': self.query_generator(self.labels, self.since_date, self.until_date, self.since_id)
-                        }
-                    ]
-                )[0]
-            except Exception as ex:
-                bt.logging.error(f" Error occurred while scraping: {ex}")
-                CredentialManager_V2().release_credential(credential)
-                continue
-            CredentialManager_V2().release_credential(credential)
-            data.extend(results['data'])
-            bt.logging.info(f" Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
-            if results['account_status'] != 'active':
-                if results['data']:
-                    self.total_tweets -= len(results['data'])
-                    self.limit -= len(results['data'])
-                    self.since_date = datetime.strptime(results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["created_at"], "%a %b %d %H:%M:%S %z %Y") #+ timedelta(miliseconds=1)
-                    self.since_id = results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["id_str"]
+                data.extend(results['data'])
+                bt.logging.info(f" Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
+                if results['account_status'] != 'active':
+                    retries = 0
+                    if results['data']:
+                        self.total_tweets -= len(results['data'])
+                        self.limit -= len(results['data'])
+                        self.since_date = datetime.strptime(results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["created_at"], "%a %b %d %H:%M:%S %z %Y") #+ timedelta(miliseconds=1)
+                        self.since_id = results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["id_str"]
+                        # data.extend(results['data'])
+                    bt.logging.warning(f" Account {credential['username']} is locked. Removing from credentials database.")
+                    CredentialManager_V2()._update_credential_database(credential, results['account_status'])
+                    CredentialManager_V2().release_credential(credential)
+                    continue
+                elif results['rate_limit']:
+                    retries = 0
+                    if results['data']:
+                        self.total_tweets -= len(results['data'])
+                        self.limit -= len(results['data'])
+                        self.since_date = datetime.strptime(results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["created_at"], "%a %b %d %H:%M:%S %z %Y") #+ timedelta(miliseconds=1)
+                        self.since_id = results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["id_str"]
+                        # data.extend(results['data'])
+                    # bt.logging.info(f"Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
+                    continue
+                else:
+                    retries = 0
                     # data.extend(results['data'])
-                bt.logging.warning(f" Account {credential['username']} is locked. Removing from credentials database.")
-                CredentialManager_V2()._update_credential_database(credential, results['account_status'])
-                CredentialManager_V2().release_credential(credential)
-                continue
-            elif results['rate_limit']:
-                if results['data']:
-                    self.total_tweets -= len(results['data'])
-                    self.limit -= len(results['data'])
-                    self.since_date = datetime.strptime(results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["created_at"], "%a %b %d %H:%M:%S %z %Y") #+ timedelta(miliseconds=1)
-                    self.since_id = results['data'][-1]['content']['itemContent']['tweet_results']['result']['legacy']["id_str"]
-                    # data.extend(results['data'])
-                # bt.logging.info(f"Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
-                continue
+                    # bt.logging.info(f"Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
+                    return data
             else:
-                # data.extend(results['data'])
-                # bt.logging.info(f"Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
+                logging.error(f"Max retries exceeded for query - {self.query_generator(self.labels, self.since_date, self.until_date, self.since_id)}. Returning {len(data)} tweet data.")
                 return data
 
     def get_trending_hashtags(self):
