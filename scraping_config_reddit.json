@@ -3,25 +3,97 @@
     
     {
       "scraper_id": "Reddit.custom",
-      "cadence_seconds": 60,
+      "cadence_seconds": 100,
       "labels_to_scrape": [
+        {
+          "label_choices": [
+            "r/AskReddit",
+            "r/worldnews",
+            "r/aww",
+            "r/gaming",
+            "r/Science",
+            "r/movies",
+            "r/technology",
+            "r/fitness",
+            "r/Books",
+            "r/food",
+            "r/personalfinance",
+            "r/photography",
+            "r/history",
+            "r/Space",
+            "r/programming"
+          ],
+          "max_data_entities": 1000,
+          "max_age_hint_minutes": 70
+        },
+        {
+          "label_choices": [
+                    "r/news",
+            "r/dataisbeautiful",
+            "r/television",
+            "r/interestingasfuck",
+            "r/EarthPorn",
+            "r/todayilearned",
+            "r/fitness",
+            "r/Books",
+            "r/food",
+            "r/personalfinance",
+            "r/photography",
+            "r/history",
+            "r/Space",
+            "r/programming"
+          ],
+          "max_data_entities": 1000,
+          "max_age_hint_minutes": 60
+        },
+        {
+          "label_choices": [
+                    "r/world",
+            "r/laptops",
+            "r/apple",
+            "r/reddit",
+            "r/twitter",
+            "r/elonmusk",
+            "r/cars",
+            "r/food",
+            "r/sports",
+            "r/ea",
+            "r/games",
+            "r/human",
+            "r/spiderman",
+            "r/batman"
+          ],
+          "max_data_entities": 1000,
+          "max_age_hint_minutes": 60
+        },
+        {
+          "label_choices": [
+            "r/Documentaries",
+            "r/Futurology",
+            "r/Art",
+            "r/technology",
+            "r/IAmA",
+            "r/relationships",
+            "r/AskHistorians",
+            "r/educationalgifs",
+            "r/philosophy"
+          ],
+          "max_data_entities": 1000,
+          "max_age_hint_minutes": 60
+        },
         {
           "label_choices": [
             "r/deepweb",
             "r/algorithmictrading",
             "r/investing",
             "r/wallstreetbets",
-            "r/TradingIndicators",
             "r/conspiracytheories",
             "r/text",
-            "r/thenextdepression",
             "r/naturalbodybuilding",
-            "r/spacetravel",
             "r/philosophy",
             "r/spacetime",
             "r/therewasanattempt",
             "r/zodiac",
-            "r/thefutureofmoney",
             "r/decentralization",
             "r/bigdata",
             "r/politicalviews",
@@ -54,8 +126,6 @@
             "r/ArtificialInteligence",
             "r/agi",
             "r/datamining",
-            "r/AINeuroscience",
-            "r/AI_Brainstorming",
             "r/stocks",
             "r/pennystocks",
             "r/ThinkOrSwim",
@@ -70,7 +140,6 @@
             "r/softwaretesting",
             "r/GraphicsProgramming",
             "r/dataviz",
-            "r/GenerativeModels",
             "r/machinelearning",
             "r/singularity",
             "r/LocalLLaMA",
@@ -86,7 +155,6 @@
             "r/netsec",
             "r/TOR",
             "r/Onions",
-            "r/security",
             "r/hacking",
             "r/spaceexploration",
             "r/spaceflight",
@@ -98,7 +166,7 @@
             "r/aiArt"
           ],
           "max_data_entities": 1000,
-          "max_age_hint_minutes": 200
+          "max_age_hint_minutes": 100
         }
       ]
     }
