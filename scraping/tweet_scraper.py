@@ -19,6 +19,7 @@ import json
 import traceback
 import string
 import os
+from threading import Lock
 from twitter.login import execute_login_flow, Client, flow_start, flow_instrumentation, flow_username, flow_password, flow_duplication_check, init_guest_token, confirm_email, solve_confirmation_challenge
 # from common.data import DataLabel
 # import asyncio
@@ -71,7 +72,7 @@ def login_v2(email: str, username: str, password: str, **kwargs) -> Client:
             'x-twitter-client-language': 'en',
         },
         follow_redirects=True,
-        proxies={'http://': f'http://{PROXY_USERNAME}:{PROXY_PASSWORD}@gate.smartproxy.com:10000'}
+        proxies={'http://': f'http://{PROXY_USERNAME}:{PROXY_PASSWORD}@gate.dc.smartproxy.com:20000'}
     )
     client = execute_login_flow_v2(client, **kwargs)
 
@@ -81,6 +82,53 @@ def login_v2(email: str, username: str, password: str, **kwargs) -> Client:
 
     
     return client
+
+class CredentialVerification(object):
+    def __init__(self):
+        self.lock = 0
+
+    def __new__(cls):
+        if not hasattr(cls, 'instance'):
+            cls.instance = super(CredentialVerification, cls).__new__(cls)
+            return cls.instance
+  
+    def verify_all_credentials(self, username=None):
+        if not self.lock:
+            self.lock = 1
+            def process_credential(credential):
+                # bt.logging.info(f"Verifying credential: {credential['username']}")
+                status = CredentialManager_V2()._check_account_status(credential)
+                if status == 'active':
+                    CredentialManager_V2().release_credential(credential)
+                if status == 'skip':
+                    CredentialManager_V2().release_credential(credential)
+                else:
+                    CredentialManager_V2()._update_credential_database(credential, status)
+                bt.logging.info(f"credential {credential['username']} is {status}")
+                return credential['username'], status
+            bt.logging.info("Verifying all credentials.")
+            url = "http://tstempmail1.pythonanywhere.com/api/credentials/"
+            response = requests.get(url)
+            if response.status_code == 200:
+                credentials = response.json()
+                if username:
+                    credentials = [credential for credential in credentials if credential['username'] == username]
+            else:
+                bt.logging.warning(f"Failed to fetch credentials: {response.text}")
+                credentials=[]
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                future_to_credential = {executor.submit(process_credential, credential): credential for credential in credentials}
+                for future in as_completed(future_to_credential):
+                    credential = future_to_credential[future]
+                    try:
+                        username, status = future.result()
+                    except Exception as exc:
+                        bt.logging.error(f"{credential['username']} generated an exception: {exc}")
+            self.lock = 0
+        else:
+            bt.logging.info("Account verification is already in process in different thread. Skipping ..")
+            time.sleep(300)
+
 
 class CredentialManager_V2:
     def verify_all_credentials(self, username=None):
@@ -155,7 +203,7 @@ class CredentialManager_V2:
             else:
                 if 'No credentials available' in response.text:
                     requests.get('http://tstempmail1.pythonanywhere.com/api/activate_all/')
-                    self.verify_all_credentials()
+                    CredentialVerification().verify_all_credentials()
                     
                 bt.logging.warning(f"Error while fetching credentials: {response.text}")
                 return  None
