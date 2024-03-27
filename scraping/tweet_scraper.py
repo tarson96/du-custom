@@ -19,7 +19,9 @@ import json
 import traceback
 import string
 import os
+import re
 from threading import Lock
+import sqlite3
 from twitter.login import execute_login_flow, Client, flow_start, flow_instrumentation, flow_username, flow_password, flow_duplication_check, init_guest_token, confirm_email, solve_confirmation_challenge
 # from common.data import DataLabel
 # import asyncio
@@ -493,12 +495,40 @@ class TwitterScraper_V1:
 
     def query_generator(self, labels: list, since_date: datetime, until_date: datetime, since_id: str=None):
         date_format = "%Y-%m-%d_%H:%M:%S_UTC"
-        query = f"since:{since_date.strftime(date_format)} until:{until_date.strftime(date_format)}"
+        query = ''
+        # query = f"since:{since_date.strftime(date_format)} until:{until_date.strftime(date_format)}"
         if labels:
             label_query = " OR ".join([label for label in labels])
             query += f" ({label_query})"
         else:
-            query += f" {random.choice(string.ascii_letters)}"
+            headers  = {
+                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+                'accept-language': 'en-US,en;q=0.7',
+                'cache-control': 'max-age=0',
+                'sec-ch-ua': '"Brave";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                'sec-ch-ua-mobile': '?0',
+                'sec-ch-ua-platform': '"Windows"',
+                'sec-fetch-dest': 'document',
+                'sec-fetch-mode': 'navigate',
+                'sec-fetch-site': 'same-origin',
+                'sec-fetch-user': '?1',
+                'sec-gpc': '1',
+                'upgrade-insecure-requests': '1',
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+            }
+            response = requests.get(f'https://getdaytrends.com/{random.choice(list(range(1,23)))}/', headers=headers)
+            labels = []
+            if response.status_code == 200:
+                for hashtag in re.findall(r'(\#[\S]+)\<\/a\>', response.text):
+                    if '#' in hashtag:
+                        labels.append(hashtag)
+                labels = [random.choice(labels)]
+                label_query = " OR ".join([label for label in labels])
+                query += f" {label_query}"
+                since_id = self.get_sinceid_for_hashtag(query.strip())
+
+            else:
+                query += f" {random.choice(string.ascii_letters)}"
             # label_query = " OR ".join([label for label in self.trending_hashtags[0:3]])
             # query += f" ({label_query})"
         if since_id:
@@ -659,7 +689,7 @@ class TwitterScraper_V1:
                     # bt.logging.info(f"Scraped {len(results['data'])} tweets using username {credential['username']}. Total tweets scraped = {len(data)}")
                     return data
             else:
-                logging.error(f"Max retries exceeded for query - {self.query_generator(self.labels, self.since_date, self.until_date, self.since_id)}. Returning {len(data)} tweet data.")
+                bt.logging.error(f"Max retries exceeded for query - {self.query_generator(self.labels, self.since_date, self.until_date, self.since_id)}. Returning {len(data)} tweet data.")
                 return data
 
     def get_trending_hashtags(self):
@@ -686,7 +716,23 @@ class TwitterScraper_V1:
             trending_hashtags = result.keys()
             return list(trending_hashtags)
         # return sc.trends(['+0530'])
-
+    
+    def get_sinceid_for_hashtag(self, hashtag):
+        try:
+            conn = sqlite3.connect('SqliteMinerStorage.sqlite')
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT uri FROM DataEntity WHERE label='{hashtag}' and datetime>DATE('now','-1 day') ORDER BY datetime DESC LIMIT 1")
+            results = cursor.fetchall()
+            cursor.close()
+            # print(results, f"SELECT uri FROM DataEntity WHERE label='{hashtag}' and datetime>DATE('now','-1 day') ORDER BY datetime LIMIT 1")
+            if results:
+                since_id = results[0][0].split('/')[-1]
+            else:
+                since_id = None
+        except Exception as ex:
+            bt.logging.error(f'Error while generating since_id for {hashtag}: {ex}')
+            since_id = None
+        return since_id
 # generated_id = []
 def get_tweets_for_time_window(start, end, limit, labels, run_type):
     # global generated_id
@@ -744,7 +790,8 @@ def fetch_tweets_in_parallel(since_date, until_date, labels, max_items=100, max_
 
 if __name__ == '__main__':
     start = datetime.now()
-    CredentialManager_V2().verify_all_credentials()
+    # CredentialManager_V2().verify_all_credentials()
+    print(get_sinceid_for_hashtag('#schwurbeltroll'))
     # c = CredentialManager_V2().request_credential(_type='all')
     # print(c)
     # CredentialManager_V2().release_credential(c)
