@@ -170,3 +170,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 SqliteMinerStorage (1).sqlite-wal
+SqliteMinerStorage.sqbpro
+SqliteMinerStorage.sqlite-shm
+SqliteMinerStorage.sqlite-wal
+SqliteMinerStorage.sqlite-shm
