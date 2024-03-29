@@ -13,7 +13,7 @@ from scraping.scraper import ScrapeConfig, Scraper, ValidationResult
 from scraping.apify import ActorRunner, RunConfig
 from scraping.x.model import XContent
 from scraping.x import utils
-from scraping.tweet_scraper import TwitterScraper_V1, fetch_tweets_in_parallel
+from scraping.tweet_scraper import TwitterScraper_V1, fetch_tweets_in_parallel, fetch_tweets_in_parallel_v2
 import datetime as dt
 import requests
 import re
@@ -164,7 +164,7 @@ class MicroworldsTwitterScraper(Scraper):
             #     until_date=scrape_config.date_range.end.astimezone(tz=dt.timezone.utc), 
             #     limit=max_items, 
             #     labels=scrape_config.labels).search()
-            dataset: List[dict] = fetch_tweets_in_parallel(
+            dataset: List[dict] = fetch_tweets_in_parallel_v2(
                 since_date=scrape_config.date_range.start.astimezone(tz=dt.timezone.utc),
                 until_date=scrape_config.date_range.end.astimezone(tz=dt.timezone.utc),
                 max_items=max_items,
