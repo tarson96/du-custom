@@ -174,3 +174,5 @@ SqliteMinerStorage.sqbpro
 SqliteMinerStorage.sqlite-shm
 SqliteMinerStorage.sqlite-wal
 SqliteMinerStorage.sqlite-shm
+trends.json
+data/raw/trends/*

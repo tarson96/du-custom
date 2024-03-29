@@ -8,7 +8,7 @@ from twitter.constants import *
 import requests
 import random
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from httpx import AsyncClient
 from pathlib import Path
 import bittensor as bt
@@ -496,39 +496,43 @@ class TwitterScraper_V1:
     def query_generator(self, labels: list, since_date: datetime, until_date: datetime, since_id: str=None):
         date_format = "%Y-%m-%d_%H:%M:%S_UTC"
         query = ''
+        if since_date:
+            query += f'since:{since_date.strftime(date_format)} '
+        if until_date:
+            query += f'until:{until_date.strftime(date_format)} '
         # query = f"since:{since_date.strftime(date_format)} until:{until_date.strftime(date_format)}"
         if labels:
             label_query = " OR ".join([label for label in labels])
             query += f" ({label_query})"
         else:
-            headers  = {
-                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-                'accept-language': 'en-US,en;q=0.7',
-                'cache-control': 'max-age=0',
-                'sec-ch-ua': '"Brave";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
-                'sec-ch-ua-mobile': '?0',
-                'sec-ch-ua-platform': '"Windows"',
-                'sec-fetch-dest': 'document',
-                'sec-fetch-mode': 'navigate',
-                'sec-fetch-site': 'same-origin',
-                'sec-fetch-user': '?1',
-                'sec-gpc': '1',
-                'upgrade-insecure-requests': '1',
-                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
-            }
-            response = requests.get(f'https://getdaytrends.com/{random.choice(list(range(1,23)))}/', headers=headers)
-            labels = []
-            if response.status_code == 200:
-                for hashtag in re.findall(r'(\#[\S]+)\<\/a\>', response.text):
-                    if '#' in hashtag:
-                        labels.append(hashtag)
-                labels = [random.choice(labels)]
-                label_query = " OR ".join([label for label in labels])
-                query += f" {label_query}"
-                since_id = self.get_sinceid_for_hashtag(query.strip())
+            # headers  = {
+            #     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            #     'accept-language': 'en-US,en;q=0.7',
+            #     'cache-control': 'max-age=0',
+            #     'sec-ch-ua': '"Brave";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+            #     'sec-ch-ua-mobile': '?0',
+            #     'sec-ch-ua-platform': '"Windows"',
+            #     'sec-fetch-dest': 'document',
+            #     'sec-fetch-mode': 'navigate',
+            #     'sec-fetch-site': 'same-origin',
+            #     'sec-fetch-user': '?1',
+            #     'sec-gpc': '1',
+            #     'upgrade-insecure-requests': '1',
+            #     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+            # }
+            # response = requests.get(f'https://getdaytrends.com/{random.choice(list(range(1,23)))}/', headers=headers)
+            # labels = []
+            # if response.status_code == 200:
+            #     for hashtag in re.findall(r'(\#[\S]+)\<\/a\>', response.text):
+            #         if '#' in hashtag:
+            #             labels.append(hashtag)
+            #     labels = [random.choice(labels)]
+            #     label_query = " OR ".join([label for label in labels])
+            #     query += f" {label_query}"
+            #     since_id = self.get_sinceid_for_hashtag(query.strip())
 
-            else:
-                query += f" {random.choice(string.ascii_letters)}"
+            # else:
+            query += f" {random.choice(string.ascii_letters)}"
             # label_query = " OR ".join([label for label in self.trending_hashtags[0:3]])
             # query += f" ({label_query})"
         if since_id:
@@ -564,7 +568,7 @@ class TwitterScraper_V1:
                 CredentialManager().release_credential(credential)
                 i+=1
                 t = 2 + i + random.random()
-                bt.logging.warning(f"Rate limit exceeded for username. Sleeping for {t} seconds.")
+                bt.logging.warning(f"Rate limit exceeded for username {credential['username']}. Sleeping for {t} seconds.")
                 time.sleep(t)
                 continue
             i=1
@@ -635,7 +639,7 @@ class TwitterScraper_V1:
                     CredentialManager_V2().release_credential(credential)
                     i+=1
                     t = 2 + i + random.random()
-                    bt.logging.warning(f" Rate limit exceeded for username. Sleeping for {t} seconds.")
+                    bt.logging.warning(f" Rate limit exceeded for username  {credential['username']}. Sleeping for {t} seconds.")
                     time.sleep(t)
                     continue
                 i=1
@@ -693,28 +697,38 @@ class TwitterScraper_V1:
                 return data
 
     def get_trending_hashtags(self):
+        i = 1
+        retries = 0
+        result = []
         while True:
-            credential = CredentialManager_V2().request_credential(self.run_type)
-            if not credential:
-                i+=1
-                t = 2 ** i + random.random()
-                bt.logging.warning(f" No available credentials. Sleeping for {t} seconds.")
-                time.sleep(t)
-                continue
-            if self.is_ratelimit_execeeded(credential):
+            if retries<5:
+                credential = CredentialManager_V2().request_credential(self.run_type)
+                if not credential:
+                    i+=1
+                    t = 2 ** i + random.random()
+                    bt.logging.warning(f" No available credentials. Sleeping for {t} seconds.")
+                    time.sleep(t)
+                    continue
+                if self.is_ratelimit_execeeded(credential):
+                    CredentialManager_V2().release_credential(credential)
+                    i+=1
+                    t = 2 ** i + random.random()
+                    bt.logging.warning(f" Rate limit exceeded for username  {credential['username']}. Sleeping for {t} seconds.")
+                    time.sleep(t)
+                    continue
+                i=1
+                bt.logging.info(f"Using username {credential['username']} for fetching trending_hashtag.")
+                try:
+                    sc = scraper.Scraper(credential['email'], credential['username'], credential['password'], save=False, debug=0)
+                    result = sc.trends(["-1200", "-1100", "-1000", "-0900", "-0800", "-0700", "-0600", "-0500", "-0400", "-0300",
+                              "-0200", "-0100", "+0000", "+0100", "+0200", "+0300", "+0400", "+0500", "+0600", "+0700",
+                              "+0800", "+0900", "+1000", "+1100", "+1200", "+1300", "+1400"])
+                except:
+                    CredentialManager_V2().release_credential(credential)
+                    retries += 1
+                    continue
                 CredentialManager_V2().release_credential(credential)
-                i+=1
-                t = 2 ** i + random.random()
-                bt.logging.warning(f" Rate limit exceeded for username. Sleeping for {t} seconds.")
-                time.sleep(t)
-                continue
-            i=1
-            bt.logging.info(f"Using username {credential['username']} for fetching trending_hashtag.")
-            sc = scraper.Scraper(credential['email'], credential['username'], credential['password'], save=False, debug=0)
-            result = sc.trends(['+0530'])[0]
-            CredentialManager_V2().release_credential(credential)
-            trending_hashtags = result.keys()
-            return list(trending_hashtags)
+            return result
         # return sc.trends(['+0530'])
     
     def get_sinceid_for_hashtag(self, hashtag):
@@ -734,13 +748,75 @@ class TwitterScraper_V1:
             since_id = None
         return since_id
 # generated_id = []
+def get_last_tweettime_for_hashtag(hashtag:str):
+    
+    try:
+        conn = sqlite3.connect('SqliteMinerStorage.sqlite')
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT max(datetime) as last_scraped_datetime FROM DataEntity WHERE label='{hashtag.lower()}' and datetime>DATE('now','-1 day')")
+        results = cursor.fetchall()
+        cursor.close()
+        if results:
+            since_date = results[0][0]
+        else:
+            since_date = None
+    except Exception as ex:
+        # traceback.print_exc()
+        bt.logging.error(f'Error while generating since_id for {hashtag}: {ex}')
+        since_date = None
+    return since_date
+
+def get_all_trending_hashtags():
+    if os.path.exists('trending_hashtags.json') and datetime.strptime(json.loads(open('trending_hashtags.json','r').read())['load_date'], '%Y-%m-%d %H:%M:%S') > (datetime.now() - timedelta(hours=3)):
+        return json.loads(open('trending_hashtags.json','r').read())['hashtags']
+    trends_in = ['/', '/algeria/', '/algeria/algiers/', '/argentina/', '/argentina/buenos-aires/', '/argentina/cordoba/', '/argentina/mendoza/', '/argentina/rosario/', '/australia/', '/australia/adelaide/', '/australia/brisbane/', '/australia/canberra/', '/australia/darwin/', '/australia/melbourne/', '/australia/perth/', '/australia/sydney/', '/austria/', '/austria/vienna/', '/bahrain/', '/belarus/', '/belarus/brest/', '/belarus/gomel/', '/belarus/grodno/', '/belarus/minsk/', '/belgium/', '/brazil/', '/brazil/belem/', '/brazil/belo-horizonte/', '/brazil/brasilia/', '/brazil/campinas/', '/brazil/curitiba/', '/brazil/fortaleza/', '/brazil/goiania/', '/brazil/guarulhos/', '/brazil/manaus/', '/brazil/porto-alegre/', '/brazil/recife/', '/brazil/rio-de-janeiro/', '/brazil/salvador/', '/brazil/sao-luis/', '/brazil/sao-paulo/', '/canada/', '/canada/calgary/', '/canada/edmonton/', '/canada/montreal/', '/canada/ottawa/', '/canada/quebec/', '/canada/toronto/', '/canada/vancouver/', '/canada/winnipeg/', '/chile/', '/chile/concepcion/', '/chile/santiago/', '/chile/valparaiso/', '/colombia/', '/colombia/barranquilla/', '/colombia/bogota/', '/colombia/cali/', '/colombia/medellin/', '/denmark/', '/dominican-republic/', '/dominican-republic/santo-domingo/', '/ecuador/', '/ecuador/guayaquil/', '/ecuador/quito/', '/egypt/', '/egypt/alexandria/', '/egypt/cairo/', '/egypt/giza/', '/france/', '/france/bordeaux/', '/france/lille/', '/france/lyon/', '/france/marseille/', '/france/montpellier/', '/france/nantes/', '/france/paris/', '/france/rennes/', '/france/strasbourg/', '/france/toulouse/', '/germany/', '/germany/berlin/', '/germany/bremen/', '/germany/cologne/', '/germany/dortmund/', '/germany/dresden/', '/germany/dusseldorf/', '/germany/essen/', '/germany/frankfurt/', '/germany/hamburg/', '/germany/leipzig/', '/germany/munich/', '/germany/stuttgart/', '/ghana/', '/ghana/accra/', '/ghana/kumasi/', '/greece/', '/greece/athens/', '/greece/thessaloniki/', '/guatemala/', '/guatemala/guatemala-city/', '/india/', '/india/ahmedabad/', '/india/amritsar/', '/india/bangalore/', '/india/bhopal/', '/india/chennai/', '/india/delhi/', '/india/hyderabad/', '/india/indore/', '/india/jaipur/', '/india/kanpur/', '/india/kolkata/', '/india/lucknow/', '/india/mumbai/', '/india/nagpur/', '/india/patna/', '/india/pune/', '/india/rajkot/', '/india/ranchi/', '/india/srinagar/', '/india/surat/', '/india/thane/', '/indonesia/', '/indonesia/bandung/', '/indonesia/bekasi/', '/indonesia/depok/', '/indonesia/jakarta/', '/indonesia/makassar/', '/indonesia/medan/', '/indonesia/palembang/', '/indonesia/pekanbaru/', '/indonesia/semarang/', '/indonesia/surabaya/', '/indonesia/tangerang/', '/ireland/', '/ireland/cork/', '/ireland/dublin/', '/ireland/galway/', '/israel/', '/israel/haifa/', '/israel/jerusalem/', '/israel/tel-aviv/', '/italy/', '/italy/bologna/', '/italy/genoa/', '/italy/milan/', '/italy/naples/', '/italy/palermo/', '/italy/rome/', '/italy/turin/', '/japan/', '/japan/chiba/', '/japan/fukuoka/', '/japan/hamamatsu/', '/japan/hiroshima/', '/japan/kawasaki/', '/japan/kitakyushu/', '/japan/kobe/', '/japan/kumamoto/', '/japan/kyoto/', '/japan/nagoya/', '/japan/niigata/', '/japan/okayama/', '/japan/okinawa/', '/japan/osaka/', '/japan/sagamihara/', '/japan/saitama/', '/japan/sapporo/', '/japan/sendai/', '/japan/takamatsu/', '/japan/tokyo/', '/japan/yokohama/', '/jordan/', '/jordan/amman/', '/kenya/', '/kenya/mombasa/', '/kenya/nairobi/', '/korea/', '/korea/ansan/', '/korea/bucheon/', '/korea/busan/', '/korea/changwon/', '/korea/daegu/', '/korea/daejeon/', '/korea/goyang/', '/korea/gwangju/', '/korea/incheon/', '/korea/seongnam/', '/korea/seoul/', '/korea/suwon/', '/korea/ulsan/', '/korea/yongin/', '/kuwait/', '/latvia/', '/latvia/riga/', '/lebanon/', '/malaysia/', '/malaysia/hulu-langat/', '/malaysia/ipoh/', '/malaysia/johor-bahru/', '/malaysia/kajang/', '/malaysia/klang/', '/malaysia/kuala-lumpur/', '/malaysia/petaling/', '/mexico/', '/mexico/acapulco/', '/mexico/aguascalientes/', '/mexico/chihuahua/', '/mexico/ciudad-juarez/', '/mexico/culiacan/', '/mexico/ecatepec-de-morelos/', '/mexico/guadalajara/', '/mexico/hermosillo/', '/mexico/leon/', '/mexico/merida/', '/mexico/mexicali/', '/mexico/mexico-city/', '/mexico/monterrey/', '/mexico/morelia/', '/mexico/naucalpan-de-juarez/', '/mexico/nezahualcoyotl/', '/mexico/puebla/', '/mexico/queretaro/', '/mexico/saltillo/', '/mexico/san-luis-potosi/', '/mexico/tijuana/', '/mexico/toluca/', '/mexico/zapopan/', '/netherlands/', '/netherlands/amsterdam/', '/netherlands/den-haag/', '/netherlands/rotterdam/', '/netherlands/utrecht/', '/new-zealand/', '/new-zealand/auckland/', '/nigeria/', '/nigeria/benin-city/', '/nigeria/ibadan/', '/nigeria/kaduna/', '/nigeria/kano/', '/nigeria/lagos/', '/nigeria/port-harcourt/', '/norway/', '/norway/bergen/', '/norway/oslo/', '/oman/', '/oman/muscat/', '/pakistan/', '/pakistan/faisalabad/', '/pakistan/karachi/', '/pakistan/lahore/', '/pakistan/multan/', '/pakistan/rawalpindi/', '/panama/', '/peru/', '/peru/lima/', '/philippines/', '/philippines/antipolo/', '/philippines/cagayan-de-oro/', '/philippines/calocan/', '/philippines/cebu-city/', '/philippines/davao-city/', '/philippines/makati/', '/philippines/manila/', '/philippines/pasig/', '/philippines/quezon-city/', '/philippines/taguig/', '/philippines/zamboanga-city/', '/poland/', '/poland/gdansk/', '/poland/krakow/', '/poland/lodz/', '/poland/poznan/', '/poland/warsaw/', '/poland/wroclaw/', '/portugal/', '/puerto-rico/', '/qatar/', '/russia/', '/russia/chelyabinsk/', '/russia/irkutsk/', '/russia/kazan/', '/russia/khabarovsk/', '/russia/krasnodar/', '/russia/krasnoyarsk/', '/russia/moscow/', '/russia/nizhny-novgorod/', '/russia/novosibirsk/', '/russia/omsk/', '/russia/perm/', '/russia/rostov-on-don/', '/russia/saint-petersburg/', '/russia/samara/', '/russia/ufa/', '/russia/vladivostok/', '/russia/volgograd/', '/russia/voronezh/', '/russia/yekaterinburg/', '/saudi-arabia/', '/saudi-arabia/ahsa/', '/saudi-arabia/dammam/', '/saudi-arabia/jeddah/', '/saudi-arabia/mecca/', '/saudi-arabia/medina/', '/saudi-arabia/riyadh/', '/singapore/', '/singapore/', '/south-africa/', '/south-africa/cape-town/', '/south-africa/durban/', '/south-africa/johannesburg/', '/south-africa/port-elizabeth/', '/south-africa/pretoria/', '/south-africa/soweto/', '/spain/', '/spain/barcelona/', '/spain/bilbao/', '/spain/las-palmas/', '/spain/madrid/', '/spain/malaga/', '/spain/murcia/', '/spain/palma/', '/spain/seville/', '/spain/valencia/', '/spain/zaragoza/', '/sweden/', '/sweden/gothenburg/', '/sweden/stockholm/', '/switzerland/', '/switzerland/geneva/', '/switzerland/lausanne/', '/switzerland/zurich/', '/thailand/', '/thailand/bangkok/', '/turkey/', '/turkey/adana/', '/turkey/ankara/', '/turkey/antalya/', '/turkey/bursa/', '/turkey/diyarbakır/', '/turkey/eskisehir/', '/turkey/gaziantep/', '/turkey/istanbul/', '/turkey/izmir/', '/turkey/kayseri/', '/turkey/konya/', '/turkey/mersin/', '/ukraine/', '/ukraine/dnipropetrovsk/', '/ukraine/donetsk/', '/ukraine/kharkiv/', '/ukraine/kyiv/', '/ukraine/lviv/', '/ukraine/odesa/', '/ukraine/zaporozhye/', '/united-arab-emirates/', '/united-arab-emirates/abu-dhabi/', '/united-arab-emirates/dubai/', '/united-arab-emirates/sharjah/', '/united-kingdom/', '/united-kingdom/belfast/', '/united-kingdom/birmingham/', '/united-kingdom/blackpool/', '/united-kingdom/bournemouth/', '/united-kingdom/brighton/', '/united-kingdom/bristol/', '/united-kingdom/cardiff/', '/united-kingdom/coventry/', '/united-kingdom/derby/', '/united-kingdom/edinburgh/', '/united-kingdom/glasgow/', '/united-kingdom/hull/', '/united-kingdom/leeds/', '/united-kingdom/leicester/', '/united-kingdom/liverpool/', '/united-kingdom/london/', '/united-kingdom/manchester/', '/united-kingdom/middlesbrough/', '/united-kingdom/newcastle/', '/united-kingdom/nottingham/', '/united-kingdom/plymouth/', '/united-kingdom/portsmouth/', '/united-kingdom/preston/', '/united-kingdom/sheffield/', '/united-kingdom/stoke-on-trent/', '/united-kingdom/swansea/', '/united-states/', '/united-states/albuquerque/', '/united-states/atlanta/', '/united-states/austin/', '/united-states/baltimore/', '/united-states/baton-rouge/', '/united-states/birmingham/', '/united-states/boston/', '/united-states/charlotte/', '/united-states/chicago/', '/united-states/cincinnati/', '/united-states/cleveland/', '/united-states/colorado-springs/', '/united-states/columbus/', '/united-states/dallas-ft-worth/', '/united-states/denver/', '/united-states/detroit/', '/united-states/el-paso/', '/united-states/fresno/', '/united-states/greensboro/', '/united-states/harrisburg/', '/united-states/honolulu/', '/united-states/houston/', '/united-states/indianapolis/', '/united-states/jackson/', '/united-states/jacksonville/', '/united-states/kansas-city/', '/united-states/las-vegas/', '/united-states/long-beach/', '/united-states/los-angeles/', '/united-states/louisville/', '/united-states/memphis/', '/united-states/mesa/', '/united-states/miami/', '/united-states/milwaukee/', '/united-states/minneapolis/', '/united-states/nashville/', '/united-states/new-haven/', '/united-states/new-orleans/', '/united-states/new-york/', '/united-states/norfolk/', '/united-states/oklahoma-city/', '/united-states/omaha/', '/united-states/orlando/', '/united-states/philadelphia/', '/united-states/phoenix/', '/united-states/pittsburgh/', '/united-states/portland/', '/united-states/providence/', '/united-states/raleigh/', '/united-states/richmond/', '/united-states/sacramento/', '/united-states/salt-lake-city/', '/united-states/san-antonio/', '/united-states/san-diego/', '/united-states/san-francisco/', '/united-states/san-jose/', '/united-states/seattle/', '/united-states/st-louis/', '/united-states/tallahassee/', '/united-states/tampa/', '/united-states/tucson/', '/united-states/virginia-beach/', '/united-states/washington/', '/venezuela/', '/venezuela/barcelona/', '/venezuela/barquisimeto/', '/venezuela/caracas/', '/venezuela/ciudad-guayana/', '/venezuela/maracaibo/', '/venezuela/maracay/', '/venezuela/maturin/', '/venezuela/turmero/', '/venezuela/valencia/', '/vietnam/', '/vietnam/can-tho/', '/vietnam/da-nang/', '/vietnam/hai-phong/', '/vietnam/hanoi/', '/vietnam/ho-chi-minh-city/']
+    trends = TwitterScraper_V1().get_trending_hashtags()
+    hashtags = []
+    json.dump(trends, open('trends.json','w'))
+    for country in trends:
+        trend = country.keys()
+        hashtags.extend([h for h in trend if '#' in h])
+
+    bt.logging.info('Fetching trending hashtags from getdaytrends.com')
+    for i in range(1,16):
+        headers  = {
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'accept-language': 'en-US,en;q=0.7',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Brave";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'same-origin',
+            'sec-fetch-user': '?1',
+            'sec-gpc': '1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+        }
+        response = requests.get(f'https://getdaytrends.com/{i}/', headers=headers)
+        if response.status_code == 200:
+            for hashtag in re.findall(r'(\#[\S]+)\<\/a\>', response.text):
+                if '#' in hashtag:
+                    hashtags.append(hashtag)
+    
+    bt.logging.info('Fetching trending hashtags from trend.in')
+    def get_trending_hashtags_trendin(url):
+        response = requests.get(url)
+        if response.status_code == 200:
+            return re.findall(r'(\#[\S]+)\<\/a\>', response.text)
+        return []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        future_to_url = {executor.submit(get_trending_hashtags_trendin, f"https://trends24.in{url}"): url for url in trends_in}
+        for future in as_completed(future_to_url):
+            hashtags.extend(future.result())
+
+    hashtags = list(set(hashtags))
+    json.dump({"load_date": datetime.now().strftime('%Y-%m-%d %H:%M:%S%z'), "hashtags": hashtags}, open('trending_hashtags.json', 'w'))
+    return hashtags
+  
+
 def get_tweets_for_time_window(start, end, limit, labels, run_type):
-    # global generated_id
-    # while True:
-    #     id = random.randint(1, 100000)
-    #     if id not in generated_id:
-    #         generated_id.append(id)
-    #         break
     scraper = TwitterScraper_V1(
         since_date=start,
         until_date=end,
@@ -786,12 +862,66 @@ def fetch_tweets_in_parallel(since_date, until_date, labels, max_items=100, max_
     except Exception as e:
         bt.logging.error(f"parallel search failed: {e}")
     return all_tweets
-    
+
+def fetch_tweets_in_parallel_v2(since_date, until_date, labels, max_items=10000, max_workers=2, run_type='production'):
+    all_tweets = []
+    try:
+        search_params = []
+        available_hashtags = get_all_trending_hashtags()
+        number_of_trending_hashtags = len(available_hashtags)
+        bt.logging.info(f"Found {number_of_trending_hashtags} trending hashtags")
+        if not labels:
+            for i in range(number_of_trending_hashtags):
+                if len(search_params)<max_workers:
+                    random_hashtag = random.choice(available_hashtags)
+                    bt.logging.debug(f"Chose {random_hashtag} for worker {i}")
+                    available_hashtags.remove(random_hashtag)
+                    hashtag_since_date = get_last_tweettime_for_hashtag(random_hashtag)
+                    if hashtag_since_date:
+                        hashtag_since_date = datetime.strptime(hashtag_since_date, '%Y-%m-%d %H:%M:%S%z')
+                        bt.logging.debug(f"{random_hashtag} since_date is {hashtag_since_date}")
+                        if datetime.now(timezone.utc)-timedelta(hours=6)>hashtag_since_date:
+                            search_params.append((hashtag_since_date, None, [random_hashtag], max_items))
+
+                        else:
+                            bt.logging.debug(f"Latest tweet for {random_hashtag} hashtag already exists")
+                            continue
+                    else:
+                        hashtag_since_date = datetime.now(timezone.utc) - timedelta(days=1)
+                        bt.logging.debug(f"{random_hashtag} was not scraped today. Since date for this is None")
+                        search_params.append((hashtag_since_date, None, [random_hashtag], max_items))
+                else:
+                    break
+            for i in range(max_workers-len(search_params)):
+                search_params.append((since_date, until_date, labels, max_items))
+        else:
+            time_windows = divide_time_into_windows(since_date, until_date, max_workers)
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            if not labels:
+                future_to_time_window = {executor.submit(get_tweets_for_time_window, param[0], param[1], param[3], param[2], run_type): (param[0], param[1]) for param in search_params}
+            else:
+                future_to_time_window = {executor.submit(get_tweets_for_time_window, start, end, int(max_items/max_workers), labels, run_type): (start, end) for start, end in time_windows}
+            for future in as_completed(future_to_time_window):
+                time_window = future_to_time_window[future]
+                try:
+                    tweets_data = future.result()
+                    all_tweets.extend(tweets_data)
+                    # print(f"Successfully fetched data for {time_window}: {tweets_data}")
+                except Exception as exc:
+                    print(f"Failed to fetch data for {time_window}: {exc}")
+        
+        bt.logging.info(f"Total tweets fetched: {len(all_tweets)}")
+    except Exception as e:
+        # traceback.print_exc()
+        bt.logging.error(f"parallel search failed: {e}")
+    return all_tweets
 
 if __name__ == '__main__':
     start = datetime.now()
     # CredentialManager_V2().verify_all_credentials()
-    print(get_sinceid_for_hashtag('#schwurbeltroll'))
+    # print(get_sinceid_for_hashtag('#schwurbeltroll'))
+    print(get_all_trending_hashtags())
     # c = CredentialManager_V2().request_credential(_type='all')
     # print(c)
     # CredentialManager_V2().release_credential(c)
