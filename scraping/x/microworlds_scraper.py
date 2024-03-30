@@ -168,7 +168,7 @@ class MicroworldsTwitterScraper(Scraper):
                 since_date=scrape_config.date_range.start.astimezone(tz=dt.timezone.utc),
                 until_date=scrape_config.date_range.end.astimezone(tz=dt.timezone.utc),
                 max_items=max_items,
-                max_workers=4,
+                max_workers=7,
                 labels=labels
             )
         except Exception:
