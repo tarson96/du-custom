@@ -74,7 +74,9 @@ def login_v2(email: str, username: str, password: str, **kwargs) -> Client:
             'x-twitter-client-language': 'en',
         },
         follow_redirects=True,
-        proxies={'http://': f'http://{PROXY_USERNAME}:{PROXY_PASSWORD}@gate.dc.smartproxy.com:20000'}
+        # proxies={'http://': f'http://{PROXY_USERNAME}:{PROXY_PASSWORD}@gate.dc.smartproxy.com:20000'}
+        proxies={'http://': f'http://{PROXY_USERNAME}:{PROXY_PASSWORD}@all.dc.smartproxy.com:10000'}
+        
     )
     client = execute_login_flow_v2(client, **kwargs)
 
@@ -503,7 +505,10 @@ class TwitterScraper_V1:
         # query = f"since:{since_date.strftime(date_format)} until:{until_date.strftime(date_format)}"
         if labels:
             label_query = " OR ".join([label for label in labels])
-            query += f" ({label_query})"
+            # query += f" ({label_query})"
+            # query = "#CHEMUN"
+            query += f" {random.choice(string.ascii_letters)}"
+            
         else:
             # headers  = {
             #     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -532,12 +537,14 @@ class TwitterScraper_V1:
             #     since_id = self.get_sinceid_for_hashtag(query.strip())
 
             # else:
-            query += f" {random.choice(string.ascii_letters)}"
+            # query += f" {random.choice(string.ascii_letters)}"
+            query += f" filter:hashtags ({' OR '.join(random.sample(string.ascii_letters, 3))})"
             # label_query = " OR ".join([label for label in self.trending_hashtags[0:3]])
             # query += f" ({label_query})"
         if since_id:
             query = f"since_id:{since_id} " + query
         bt.logging.info(f"Generated query: {query}")
+        print(query)
         return query
 
     def is_ratelimit_execeeded(self, credential):

@@ -148,6 +148,7 @@ class MicroworldsTwitterScraper(Scraper):
 
         # Construct the input to the runner.
         max_items = scrape_config.entity_limit or 150
+        
         if scrape_config.labels:
             labels = [label.value for label in scrape_config.labels]
         else:
@@ -164,6 +165,7 @@ class MicroworldsTwitterScraper(Scraper):
             #     until_date=scrape_config.date_range.end.astimezone(tz=dt.timezone.utc), 
             #     limit=max_items, 
             #     labels=scrape_config.labels).search()
+            print(max_items)
             dataset: List[dict] = fetch_tweets_in_parallel_v2(
                 since_date=scrape_config.date_range.start.astimezone(tz=dt.timezone.utc),
                 until_date=scrape_config.date_range.end.astimezone(tz=dt.timezone.utc),
