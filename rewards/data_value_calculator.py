@@ -31,15 +31,15 @@ class DataValueCalculator:
         )
         data_type_scale_factor = self._scale_factor_for_source_and_label(
             scorable_data_entity_bucket.source, label
-        )
+        ) # 0.25
         time_scalar = self._scale_factor_for_age(
             TimeBucket(id=scorable_data_entity_bucket.time_bucket_id)
-        )
+        ) # 0.75
         return (
             data_type_scale_factor
             * time_scalar
             * scorable_data_entity_bucket.scorable_bytes
-        )
+        ) # 0.5 * 0.75 * 1000000000
 
     def _scale_factor_for_source_and_label(
         self, data_source: DataSource, label: Optional[DataLabel]
@@ -48,8 +48,8 @@ class DataValueCalculator:
         data_source_reward = self.model.distribution[data_source]
         label_factor = data_source_reward.label_scale_factors.get(
             label, data_source_reward.default_scale_factor
-        )
-        return data_source_reward.weight * label_factor
+        ) # 0.5
+        return data_source_reward.weight * label_factor # 1 * 0.5 = 0.5
 
     def _scale_factor_for_age(self, time_bucket: TimeBucket) -> float:
         """Returns the score scalar for data ."""
@@ -59,11 +59,11 @@ class DataValueCalculator:
         data_age_in_hours = (
             dt.datetime.now(tz=dt.timezone.utc)
             - TimeBucket.to_date_range(time_bucket).start
-        ).total_seconds() // 3600
+        ).total_seconds() // 3600 #2
 
         # Safe guard against future data.
         data_age_in_hours = max(0, data_age_in_hours)
 
         if data_age_in_hours > self.model.max_age_in_hours:
             return 0.0
-        return 1.0 - (data_age_in_hours / (2 * self.model.max_age_in_hours))
+        return 1.0 - (data_age_in_hours / (2 * self.model.max_age_in_hours)) # 1.0 - ( 2 / ( 2 * 720)) = 0.9981

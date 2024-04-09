@@ -135,10 +135,10 @@ class MinerScorer:
                 for bucket in index.scorable_data_entity_buckets:
                     score += self.value_calculator.get_score_for_data_entity_bucket(
                         bucket
-                    )
+                    ) # 370000000
 
                 # Scale the miner's score by its credibility, squared.
-                score *= self.miner_credibility[uid] ** 2
+                score *= self.miner_credibility[uid] ** 2 #1200000000 * 0.55 ** 2
 
             self._update_score(uid, score)
 
@@ -164,7 +164,7 @@ class MinerScorer:
 
         if total_bytes_validated > 0:
             credibility = sum(
-                result.is_valid * result.content_size_bytes_validated
+                result.is_valid * result.content_size_bytes_validated  # 1 * 20000 = 40000 / 20000
                 for result in validation_results
             ) / float(total_bytes_validated)
 
@@ -172,7 +172,7 @@ class MinerScorer:
 
         # Use EMA to update the miner's credibility.
         self.miner_credibility[uid] = (
-            self.cred_alpha * credibility
+            self.cred_alpha * credibility # 0.15 * 1 + (1 - 0.15) * 0.235 = 0.235
             + (1 - self.cred_alpha) * self.miner_credibility[uid]
         )
 
@@ -188,6 +188,7 @@ class MinerScorer:
         """
         new_score = (
             self.score_alpha * reward + (1 - self.score_alpha) * self.scores[uid]
+            #0.30 * 27000000 + ( 1 - 0.30 ) * 0
         )
 
         # If the score is over the growth limit threshold then ensure it isn't growing faster than the percent limit.

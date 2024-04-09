@@ -286,6 +286,7 @@ class SqliteMinerStorage(MinerStorage):
                     """SELECT SUM(contentSizeBytes) AS bucketSize, timeBucketId, source, label FROM DataEntity
                             WHERE timeBucketId >= ?
                             GROUP BY timeBucketId, source, label
+                            HAVING bucketSize >= 5000
                             ORDER BY bucketSize DESC
                             LIMIT ?
                             """,
