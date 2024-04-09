@@ -195,6 +195,7 @@ def get_last_tweettime_for_hashtag(hashtag:str):
         cursor.close()
         if results:
             since_date = results[0][0]
+            since_date = datetime.strptime(since_date, '%Y-%m-%d %H:%M:%S%z')
         else:
             since_date = None
     except Exception as ex:
