@@ -1,7 +1,6 @@
 # import sys
 # sys.path.append("/mnt/d/Google Drive/Temp/Desktop/Freelance/Clients/Potiential Clients/Varun S/data-universe")
 import asyncio
-import json
 import threading
 import traceback
 import bittensor as bt
@@ -10,14 +9,11 @@ from common import constants
 from common.data import DataEntity, DataLabel, DataSource
 from common.date_range import DateRange
 from scraping.scraper import ScrapeConfig, Scraper, ValidationResult
-from scraping.apify import ActorRunner, RunConfig
+from scraping.apify import ActorRunner
 from scraping.x.model import XContent
 from scraping.x import utils
-from scraping.tweet_scraper import TwitterScraper_V1, fetch_tweets_in_parallel, fetch_tweets_in_parallel_v2
+from scraping.twitter_scraper import TwitterScraper, fetch_tweets_in_parallel_v1, fetch_tweets_in_parallel_v2
 import datetime as dt
-import requests
-import re
-import random
 import nest_asyncio
 asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 nest_asyncio.apply()
@@ -464,9 +460,27 @@ async def test_multi_thread_validate():
     for t in threads:
         t.join(120)
 
+async def custom_scrape():
+    scraper = MicroworldsTwitterScraper()
+
+    entities = await scraper.scrape(
+        ScrapeConfig(
+            entity_limit=10000,
+            date_range=DateRange(
+                start=dt.datetime(2024, 1, 30, 0, 0, 0, tzinfo=dt.timezone.utc),
+                end=dt.datetime(2024, 3, 2, 9, 0, 0, tzinfo=dt.timezone.utc),
+            ),
+            labels=[],
+        )
+    )
+
+    print(f"Scraped {len(entities)} entities: {1}")
+
+    return entities
+
 
 if __name__ == "__main__":
     bt.logging.set_trace(True)
-    asyncio.run(test_multi_thread_validate())
+    # asyncio.run(test_multi_thread_validate())
     asyncio.run(test_scrape())
-    asyncio.run(test_validate())
+    # asyncio.run(test_validate())
