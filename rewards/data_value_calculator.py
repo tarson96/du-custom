@@ -34,12 +34,12 @@ class DataValueCalculator:
         ) # 0.25
         time_scalar = self._scale_factor_for_age(
             TimeBucket(id=scorable_data_entity_bucket.time_bucket_id)
-        ) # 0.9981
+        ) # 0.75
         return (
             data_type_scale_factor
             * time_scalar
             * scorable_data_entity_bucket.scorable_bytes
-        ) # 0.25 * 0.5 * 20000
+        ) # 0.5 * 0.75 * 1000000000
 
     def _scale_factor_for_source_and_label(
         self, data_source: DataSource, label: Optional[DataLabel]
@@ -49,7 +49,7 @@ class DataValueCalculator:
         label_factor = data_source_reward.label_scale_factors.get(
             label, data_source_reward.default_scale_factor
         ) # 0.5
-        return data_source_reward.weight * label_factor # 0.5 * 0.5 = 0.25
+        return data_source_reward.weight * label_factor # 1 * 0.5 = 0.5
 
     def _scale_factor_for_age(self, time_bucket: TimeBucket) -> float:
         """Returns the score scalar for data ."""

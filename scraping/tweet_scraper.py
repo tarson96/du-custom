@@ -505,9 +505,7 @@ class TwitterScraper_V1:
         # query = f"since:{since_date.strftime(date_format)} until:{until_date.strftime(date_format)}"
         if labels:
             label_query = " OR ".join([label for label in labels])
-            # query += f" ({label_query})"
-            # query = "#CHEMUN"
-            query += f" {random.choice(string.ascii_letters)}"
+            query += f" ({label_query})"
             
         else:
             # headers  = {
@@ -885,16 +883,16 @@ def fetch_tweets_in_parallel_v2(since_date, until_date, labels, max_items=10000,
                     available_hashtags.remove(random_hashtag)
                     hashtag_since_date = get_last_tweettime_for_hashtag(random_hashtag)
                     if hashtag_since_date:
-                        hashtag_since_date = datetime.strptime(hashtag_since_date, '%Y-%m-%d %H:%M:%S%z')
-                        bt.logging.debug(f"{random_hashtag} since_date is {hashtag_since_date}")
-                        if datetime.now(timezone.utc)-timedelta(hours=6)>hashtag_since_date:
-                            search_params.append((hashtag_since_date, None, [random_hashtag], max_items))
+                        # hashtag_since_date = datetime.strptime(hashtag_since_date, '%Y-%m-%d %H:%M:%S%z')
+                        # bt.logging.debug(f"{random_hashtag} since_date is {hashtag_since_date}")
+                        # if datetime.now(timezone.utc)-timedelta(hours=6)>hashtag_since_date:
+                        #     search_params.append((hashtag_since_date, None, [random_hashtag], max_items))
 
-                        else:
-                            bt.logging.debug(f"Latest tweet for {random_hashtag} hashtag already exists")
-                            continue
+                        # else:
+                        #     bt.logging.debug(f"Latest tweet for {random_hashtag} hashtag already exists")
+                        continue
                     else:
-                        hashtag_since_date = datetime.now(timezone.utc) - timedelta(days=1)
+                        hashtag_since_date = datetime.now(timezone.utc) - timedelta(days=2)
                         bt.logging.debug(f"{random_hashtag} was not scraped today. Since date for this is None")
                         search_params.append((hashtag_since_date, None, [random_hashtag], max_items))
                 else:

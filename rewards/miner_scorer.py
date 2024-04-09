@@ -135,10 +135,10 @@ class MinerScorer:
                 for bucket in index.scorable_data_entity_buckets:
                     score += self.value_calculator.get_score_for_data_entity_bucket(
                         bucket
-                    ) # 5000
+                    ) # 370000000
 
                 # Scale the miner's score by its credibility, squared.
-                score *= self.miner_credibility[uid] ** 2 #5000 * 0.15 ** 2
+                score *= self.miner_credibility[uid] ** 2 #1200000000 * 0.55 ** 2
 
             self._update_score(uid, score)
 
@@ -188,6 +188,7 @@ class MinerScorer:
         """
         new_score = (
             self.score_alpha * reward + (1 - self.score_alpha) * self.scores[uid]
+            #0.30 * 27000000 + ( 1 - 0.30 ) * 0
         )
 
         # If the score is over the growth limit threshold then ensure it isn't growing faster than the percent limit.
