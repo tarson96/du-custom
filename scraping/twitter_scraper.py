@@ -195,7 +195,8 @@ def get_last_tweettime_for_hashtag(hashtag:str):
         cursor.close()
         if results:
             since_date = results[0][0]
-            since_date = datetime.strptime(since_date, '%Y-%m-%d %H:%M:%S%z')
+            if since_date:
+                since_date = datetime.strptime(since_date, '%Y-%m-%d %H:%M:%S%z')
         else:
             since_date = None
     except Exception as ex:
@@ -269,7 +270,7 @@ def get_top_trends24_hashtag():
                         try:
                             hashtag = trends.find('a').get_text(strip=True)
                             count = int(trends.find('span').get_text(strip=True).replace('K', '000'))
-                            if '#' in hashtag:
+                            if '#' in hashtag and len(hashtag)<32:
                                 all_hashtags[hashtag] = count
                         except Exception as ex:
                             continue
@@ -277,13 +278,30 @@ def get_top_trends24_hashtag():
             future_to_url = {executor.submit(_get, f"https://trends24.in{url}"): url for url in trends_in}
             for future in as_completed(future_to_url):
                 pass
+        try:
+            excluded_hastags = set()
+            eh_res = requests.get('https://api2.databox.com/d/datawalls/6421d7c725ecbcad689b622338546a9145b82b46577cf67/boards/1313341/data').json()
+            for sample in eh_res["samples"]:
+                for ds in sample["sampledata"]["dsData"]:
+                    for item in ds["data"][0]["items"]:
+                        for attr in ds["data"]:
+                            if attr["attribute"].startswith("#"):
+                                excluded_hastags.add(attr["attribute"])
+            for exclude in excluded_hastags:
+                try:
+                    del all_hashtags[exclude]
+                except:
+                    pass
+        except:
+            pass
         all_hashtags = dict(sorted(all_hashtags.items(), key=lambda item: item[1]))
     try:
         top_hashtag = list(all_hashtags.keys())[-1]
         del all_hashtags[top_hashtag]
-        json.dump({"load_date": datetime.now().strftime('%Y-%m-%d %H:%M:%S%z'), "hashtags": all_hashtags}, open('trending_hashtags.json', 'w'))
     except IndexError:
         top_hashtag = None
+    json.dump({"load_date": datetime.now().strftime('%Y-%m-%d %H:%M:%S%z'), "hashtags": all_hashtags}, open('trending_hashtags.json', 'w'))
+    bt.logging.info(f"Top selected hastag is {top_hashtag}")
     return top_hashtag
 
 def get_tweets_for_time_window(start, end, limit, labels, run_type):
@@ -335,49 +353,68 @@ def fetch_tweets_in_parallel_v1(since_date, until_date, labels, max_items=100, m
 def fetch_tweets_in_parallel_v2(since_date, until_date, labels, max_items=10000, max_workers=2, run_type='production'):
     all_tweets = []
     try:
-        search_params = []
+        # search_params = []
         if not labels:
-            for _ in range(max_workers):
-                # Fetch top hashtag
-                while True:
-                    top_hashtag = get_top_trends24_hashtag()
-                    if not top_hashtag:
-                        break
-
-                    # Get last scraped since_date
-                    hashtag_since_date = get_last_tweettime_for_hashtag(top_hashtag)
-                    break
-                
-                if not hashtag_since_date:
-                    hashtag_since_date = datetime.now(timezone.utc) - timedelta(days=2)
-                
-                if not top_hashtag:
-                    search_params.append((hashtag_since_date, None, [], max_items))
+            top_hashtag = get_top_trends24_hashtag()
+            if top_hashtag:
+                labels = [top_hashtag]
+                label_since_date = get_last_tweettime_for_hashtag(top_hashtag)
+                if label_since_date:
+                    since_date = label_since_date
                 else:
-                    search_params.append((hashtag_since_date, None, [top_hashtag], max_items))
+                    since_date = until_date - timedelta(days=2)
+            # for _ in range(max_workers):
+            #     # Fetch top hashtag
+            #     while True:
+            #         top_hashtag = get_top_trends24_hashtag()
+            #         if not top_hashtag:
+            #             break
 
-            for _ in range(max_workers-len(search_params)):
-                search_params.append((since_date, until_date, labels, max_items))
-        else:
-            time_windows = divide_time_into_windows(since_date, until_date, max_workers)
+            #         # Get last scraped since_date
+            #         hashtag_since_date = get_last_tweettime_for_hashtag(top_hashtag)
+            #         break
+                
+            #     if not hashtag_since_date:
+            #         hashtag_since_date = datetime.now(timezone.utc) - timedelta(days=2)
+                
+            #     if not top_hashtag:
+            #         search_params.append((hashtag_since_date, None, [], max_items))
+            #     else:
+            #         search_params.append((hashtag_since_date, None, [top_hashtag], max_items))
 
+            # for _ in range(max_workers-len(search_params)):
+            #     search_params.append((since_date, until_date, labels, max_items))
+        # else:
+        #     time_windows = divide_time_into_windows(since_date, until_date, max_workers)
+        time_windows = divide_time_into_windows(since_date, until_date, max_workers)
+
+        # with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        #     if not labels:
+        #         future_to_time_window = {executor.submit(get_tweets_for_time_window, param[0], param[1], param[3], param[2], run_type): (param[0], param[1]) for param in search_params}
+        #     else:
+        #         future_to_time_window = {executor.submit(get_tweets_for_time_window, start, end, max_items, labels, run_type): (start, end) for start, end in time_windows}
+        #     for future in as_completed(future_to_time_window):
+        #         time_window = future_to_time_window[future]
+        #         try:
+        #             tweets_data = future.result()
+        #             all_tweets.extend(tweets_data)
+        #         except Exception as exc:
+        #             # traceback.print_exc()
+        #             print(f"Failed to fetch data for {time_window}: {exc}")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            if not labels:
-                future_to_time_window = {executor.submit(get_tweets_for_time_window, param[0], param[1], param[3], param[2], run_type): (param[0], param[1]) for param in search_params}
-            else:
-                future_to_time_window = {executor.submit(get_tweets_for_time_window, start, end, max_items, labels, run_type): (start, end) for start, end in time_windows}
+            future_to_time_window = {executor.submit(get_tweets_for_time_window, start, end, max_items, labels, run_type): (start, end) for start, end in time_windows}
             for future in as_completed(future_to_time_window):
                 time_window = future_to_time_window[future]
                 try:
                     tweets_data = future.result()
                     all_tweets.extend(tweets_data)
                 except Exception as exc:
-                    # traceback.print_exc()
                     print(f"Failed to fetch data for {time_window}: {exc}")
+        
         
         bt.logging.info(f"Total tweets fetched: {len(all_tweets)}")
     except Exception as e:
-        # traceback.print_exc()
+        traceback.print_exc()
         bt.logging.error(f"parallel search failed: {e}")
     return all_tweets
 
