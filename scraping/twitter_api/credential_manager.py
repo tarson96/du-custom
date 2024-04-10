@@ -164,11 +164,12 @@ class CredentialManager:
 
     def _update_credential_database(self, credential, status):
         try:
-            update_url = f"http://tstempmail1.pythonanywhere.com/api/credentials/{credential['id']}/"
-            payload = {'status': status}
-            response = requests.patch(update_url, json=payload)
-            response.raise_for_status()
-            bt.logging.info(f"Updated {credential['username']} status to {status}.")
+            if status in ['active', 'locked', 'code_verification']:
+                update_url = f"http://tstempmail1.pythonanywhere.com/api/credentials/{credential['id']}/"
+                payload = {'status': status}
+                response = requests.patch(update_url, json=payload)
+                response.raise_for_status()
+                bt.logging.info(f"Updated {credential['username']} status to {status}.")
         except requests.RequestException as e:
             bt.logging.error(f"Failed to update credential {credential['id']}: {e}")
 
