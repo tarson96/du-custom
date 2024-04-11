@@ -54,6 +54,10 @@ class ScrapeConfig(StrictBaseModel):
     # Date range within which the scraper should scrape.
     date_range: DateRange
 
+    number_of_parallel_worker: PositiveInt
+
+    time_between_hashtag_fetch: PositiveInt
+
     # Optional Labels for the scrape to scrape from.
     labels: Optional[List[DataLabel]] = Field(
         default=None,

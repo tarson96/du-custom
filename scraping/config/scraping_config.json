@@ -3,6 +3,8 @@
       {
         "scraper_id": "X.flash",
         "cadence_seconds": 50,
+        "number_of_parallel_worker": 11,
+        "time_between_hashtag_fetch": 180,
         "labels_to_scrape": [
           {
             "label_choices": [],
@@ -14,6 +16,8 @@
       {
         "scraper_id": "Reddit.lite",
         "cadence_seconds": 1000,
+        "number_of_parallel_worker": 1,
+        "time_between_hashtag_fetch": 1,
         "labels_to_scrape": [
           {
             "label_choices": [],
@@ -26,6 +30,8 @@
       {
         "scraper_id": "Reddit.custom",
         "cadence_seconds": 8000,
+        "number_of_parallel_worker": 1,
+        "time_between_hashtag_fetch": 1,
         "labels_to_scrape": [
           {
             "label_choices": [],

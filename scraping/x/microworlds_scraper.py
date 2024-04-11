@@ -166,8 +166,9 @@ class MicroworldsTwitterScraper(Scraper):
                 since_date=scrape_config.date_range.start.astimezone(tz=dt.timezone.utc),
                 until_date=scrape_config.date_range.end.astimezone(tz=dt.timezone.utc),
                 max_items=max_items,
-                max_workers=7,
-                labels=labels
+                max_workers=scrape_config.number_of_parallel_worker,
+                labels=labels,
+                time_between_hashtag_fetch=scrape_config.time_between_hashtag_fetch
             )
         except Exception:
             bt.logging.error(
