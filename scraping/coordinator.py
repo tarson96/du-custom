@@ -55,7 +55,15 @@ class ScraperConfig(StrictBaseModel):
         """
     )
 
+    number_of_parallel_worker: PositiveInt = Field(
+        description="Configures how many parallel workers the scraper will use."
+    )
 
+    time_between_hashtag_fetch: PositiveInt = Field(
+        description="Configures how often to update the trending hastags for this scraper, measured in minutes."
+    )
+
+    
 class CoordinatorConfig(StrictBaseModel):
     """Informs the Coordinator how to schedule scrapes."""
 
@@ -65,7 +73,7 @@ class CoordinatorConfig(StrictBaseModel):
 
 
 def _choose_scrape_configs(
-    scraper_id: ScraperId, config: CoordinatorConfig, now: dt.datetime
+    scraper_id: ScraperId, config: CoordinatorConfig, now: dt.datetime, 
 ) -> List[ScrapeConfig]:
     """For the given scraper, returns a list of scrapes (defined by ScrapeConfig) to be run."""
     assert (
@@ -101,6 +109,8 @@ def _choose_scrape_configs(
                 entity_limit=label_config.max_data_entities,
                 date_range=TimeBucket.to_date_range(chosen_bucket),
                 labels=labels_to_scrape,
+                number_of_parallel_worker=scraper_config.number_of_parallel_worker,
+                time_between_hashtag_fetch=scraper_config.time_between_hashtag_fetch
             )
         )
 

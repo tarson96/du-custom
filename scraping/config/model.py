@@ -80,6 +80,14 @@ class ScraperConfig(StrictBaseModel):
         """
     )
 
+    number_of_parallel_worker: PositiveInt = Field(
+        description="Configures how many parallel workers the scraper will use."
+    )
+
+    time_between_hashtag_fetch: PositiveInt = Field(
+        description="Configures how often to update the trending hastags for this scraper, measured in minutes."
+    )
+
     def to_coordinator_scraper_config(self) -> coordinator.ScraperConfig:
         """Returns the internal ScraperConfig representation
 
@@ -89,6 +97,8 @@ class ScraperConfig(StrictBaseModel):
         """
         return coordinator.ScraperConfig(
             cadence_seconds=self.cadence_seconds,
+            number_of_parallel_worker=self.number_of_parallel_worker,
+            time_between_hashtag_fetch=self.time_between_hashtag_fetch,
             labels_to_scrape=[
                 label.to_coordinator_label_scrape_config()
                 for label in self.labels_to_scrape
