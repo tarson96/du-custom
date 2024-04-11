@@ -334,6 +334,7 @@ def fetch_tweets_in_parallel_v1(since_date, until_date, labels, max_items=100, m
 
 def fetch_tweets_in_parallel_v2(since_date, until_date, labels, max_items=10000, max_workers=2, run_type='production'):
     all_tweets = []
+    hashtag_since_date= ""
     try:
         search_params = []
         if not labels:
