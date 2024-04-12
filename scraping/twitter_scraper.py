@@ -359,6 +359,7 @@ def fetch_tweets_in_parallel_v2(since_date, until_date, labels, max_items=10000,
             if top_hashtag:
                 labels = [top_hashtag]
                 label_since_date = get_last_tweettime_for_hashtag(top_hashtag)
+                until_date = datetime.now(timezone.utc)
                 if label_since_date:
                     since_date = label_since_date
                 else:
