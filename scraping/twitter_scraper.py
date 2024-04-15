@@ -363,7 +363,7 @@ def fetch_tweets_in_parallel_v2(since_date, until_date, labels, max_items=10000,
                 if label_since_date:
                     since_date = label_since_date
                 else:
-                    since_date = until_date - timedelta(days=2)
+                    since_date = until_date - timedelta(days=7)
             # for _ in range(max_workers):
             #     # Fetch top hashtag
             #     while True:
